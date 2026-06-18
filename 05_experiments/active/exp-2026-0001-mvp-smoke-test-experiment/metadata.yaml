@@ -1,0 +1,53 @@
+id: exp-2026-0001
+title: MVP Smoke Test Experiment
+status: planned
+created: 2026-06-18
+updated: 2026-06-18
+owner: me
+
+project:
+  name: compiler-research-os
+  repo:
+  commit:
+  dirty:
+
+environment:
+  os:
+  python:
+  cuda:
+  driver:
+  gpu: 
+  gpu_memory:
+  compiler:
+  triton:
+  llvm:
+
+inputs:
+  model:
+  shapes: []
+  dtype:
+
+compiler_config:
+  flags: []
+  num_warps:
+  num_stages:
+  block_size:
+
+artifacts:
+  ir_dump: dumps/ir/
+  ptx_dump: dumps/ptx/
+  cubin_dump: dumps/cubin/
+  profiler: profiles/
+
+metrics:
+  - latency_ms
+  - tflops
+  - bandwidth_gbps
+  - occupancy
+  - register_count
+  - shared_memory_bytes
+
+related:
+  idea:
+  hypothesis:
+  paper:
