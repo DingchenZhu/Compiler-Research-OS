@@ -1,0 +1,71 @@
+id: exp-2026-0002
+title: Baseline Triton Matmul on RTX4060
+status: planned
+created: 2026-06-19
+updated: 2026-06-19
+owner: me
+
+project:
+  name: compiler-experiments
+  repo:
+  commit:
+  dirty:
+
+environment:
+  os:
+  python:
+  cuda:
+  driver:
+  gpu: RTX4060
+  gpu_memory:
+  compiler:
+  triton:
+  llvm:
+
+inputs:
+  model: triton_matmul
+  shapes:
+    - M: 1024
+      N: 1024
+      K: 1024
+    - M: 2048
+      N: 2048
+      K: 2048
+    - M: 4096
+      N: 4096
+      K: 1024
+  dtype: fp16
+
+compiler_config:
+  flags: []
+  num_warps: [4, 8]
+  num_stages: [3, 4]
+  block_size:
+    - BLOCK_M: 16
+      BLOCK_N: 16
+      BLOCK_K: 32
+    - BLOCK_M: 32
+      BLOCK_N: 32
+      BLOCK_K: 32
+    - BLOCK_M: 64
+      BLOCK_N: 64
+      BLOCK_K: 32
+
+artifacts:
+  ir_dump: dumps/ir/
+  ptx_dump: dumps/ptx/
+  cubin_dump: dumps/cubin/
+  profiler: profiles/
+
+metrics:
+  - latency_ms
+  - tflops
+  - bandwidth_gbps
+  - occupancy
+  - register_count
+  - shared_memory_bytes
+
+related:
+  idea: "[[MLIR Pass Pipeline Mental Model]]"
+  hypothesis: "Triton schedule meta-parameters affect latency, TFLOPS, and resource usage on RTX4060."
+  paper: "[[Triton Compiler Architecture Reading]]"

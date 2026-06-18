@@ -1,0 +1,16 @@
+shapes:
+  - name: square_1024_fp16
+    M: 1024
+    N: 1024
+    K: 1024
+    dtype: fp16
+  - name: square_2048_fp16
+    M: 2048
+    N: 2048
+    K: 2048
+    dtype: fp16
+  - name: rectangular_4096_4096_1024_fp16
+    M: 4096
+    N: 4096
+    K: 1024
+    dtype: fp16

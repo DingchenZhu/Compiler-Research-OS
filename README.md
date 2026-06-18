@@ -2,7 +2,37 @@
 
 Compiler Research OS is a local-first, Markdown-first workspace for long-term compiler research, source reading, experiment management, architecture design, and AI-assisted reflection.
 
+Compiler Research OS 是一个本地优先、Markdown 优先的个人研究操作系统，用来长期管理编译器学习、源码阅读、论文阅读、实验复现、架构设计和 AI Agent 协作。
+
 It is designed for GPU compiler work across LLVM, MLIR, Triton, CUDA, TileLang, TVM, scheduler optimization, memory planning, and hardware-compiler co-design.
+
+当前阶段的核心目标不是把资料收集全，而是建立一个可以每天推进、每周复盘、每月沉淀的工作循环。
+
+## MVP Launch Focus
+
+第一阶段聚焦一个足够小但足够关键的主题：
+
+```text
+MLIR Pass Infrastructure
+-> Triton Compilation Pipeline
+-> GPU Scheduler / Memory Planner Mental Model
+```
+
+本周建议目标：
+
+- 读懂一个 MLIR pass 的入口、pipeline 位置和 rewrite 逻辑。
+- 建立 Triton compiler architecture 的第一张架构阅读卡。
+- 跑通一个最小 benchmark 或 smoke experiment。
+- 抽取 5 个 durable knowledge nodes。
+- 写一份 weekly report，明确下一周的实验方向。
+
+First-week goal:
+
+- Understand one MLIR pass end to end.
+- Build a first Triton compiler architecture reading note.
+- Run one minimal benchmark or smoke experiment.
+- Extract five durable knowledge nodes.
+- Write one weekly report with a concrete next experiment.
 
 ## Principles
 
@@ -40,6 +70,17 @@ scripts/            Local helper scripts for notes and experiments
 3. Capture questions, decisions, and links while working.
 4. Move durable knowledge into `10_knowledge/`.
 5. Link ideas, experiments, papers, and source notes with wikilinks.
+
+日常节奏建议：
+
+```text
+10 min  打开 daily log，确定今日 focus
+70 min  深度任务：源码 / 论文 / 实验 / 原型，只选一个
+25 min  记录理解、问题、链接、代码位置
+15 min  维护知识库：frontmatter、wikilink、next action
+```
+
+每天只追求一个真实推进。不要让系统维护吞掉研究本体。
 
 ## Research Workflow
 
@@ -124,3 +165,13 @@ Create an experiment:
 python scripts/new_experiment.py "Baseline Triton Matmul Schedule Benchmark"
 ```
 
+## First Batch Materials
+
+当前已经创建的第一批材料：
+
+- `01_daily/2026/daily-2026-06-19.md`: 今日启动记录 / launch daily log
+- `04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md`: 第一个 research idea
+- `03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md`: 第一个源码阅读计划
+- `02_papers/reading/paper-triton-compiler-architecture-reading.md`: Triton compiler architecture 阅读卡
+- `10_knowledge/concepts/`: 第一批 compiler knowledge nodes
+- `05_experiments/active/exp-2026-0001-mvp-smoke-test-experiment/`: MVP smoke experiment skeleton
