@@ -60,6 +60,7 @@ First-week goal:
 10_knowledge/       Concepts, systems, problems, principles, and world model
 11_agents/          Agent prompts, task records, outputs, logs, and guardrails
 12_roadmap/         Yearly, quarterly, and monthly plans plus skill tree
+13_skills/          Reusable workflow skills for Codex and AI agents
 scripts/            Local helper scripts for notes and experiments
 ```
 
@@ -175,3 +176,13 @@ python scripts/new_experiment.py "Baseline Triton Matmul Schedule Benchmark"
 - `02_papers/reading/paper-triton-compiler-architecture-reading.md`: Triton compiler architecture 阅读卡
 - `10_knowledge/concepts/`: 第一批 compiler knowledge nodes
 - `05_experiments/active/exp-2026-0001-mvp-smoke-test-experiment/`: MVP smoke experiment skeleton
+
+## Skills
+
+Personal workflow skills live in `13_skills/`.
+
+Current skills:
+
+- `13_skills/compiler-research-os-workflow/`: complete operating workflow for experiments, paper reading, source reading, research ideas, architecture decisions, reflections, reviews, and remote data synchronization.
+
+Use this when asking Codex to help operate the OS rather than answer a one-off question.
