@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compiler Research OS</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand">
+          <div class="brand-mark">CR</div>
+          <div>
+            <h1>Compiler Research OS</h1>
+            <p>Visual Console</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item is-active" data-view="overview">Overview</button>
+          <button class="nav-item" data-view="graph">Knowledge Graph</button>
+          <button class="nav-item" data-view="threads">Threads</button>
+          <button class="nav-item" data-view="research">Research</button>
+          <button class="nav-item" data-view="experiments">Experiments</button>
+          <button class="nav-item" data-view="papers">Papers</button>
+          <button class="nav-item" data-view="source">Source Reading</button>
+          <button class="nav-item" data-view="weekly">Weekly</button>
+          <button class="nav-item" data-view="quality">Quality</button>
+        </nav>
+
+        <section class="sidebar-section">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search" placeholder="Search notes, tags, paths..." />
+        </section>
+
+        <section class="sidebar-section">
+          <label for="typeFilter">Node Type</label>
+          <select id="typeFilter">
+            <option value="all">All types</option>
+          </select>
+        </section>
+
+        <section class="sidebar-section">
+          <label class="checkbox-row">
+            <input id="showSystemNotes" type="checkbox" />
+            <span>Show system notes</span>
+          </label>
+        </section>
+
+        <section class="sidebar-section compact">
+          <div class="status-pill" id="indexStatus">Loading index...</div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Local-first / Markdown-first / AI-native</p>
+            <h2 id="viewTitle">Overview</h2>
+          </div>
+          <div class="topbar-actions">
+            <button id="resetFilters" class="secondary-button">Reset</button>
+          </div>
+        </header>
+
+        <section id="overviewView" class="view is-visible"></section>
+        <section id="graphView" class="view"></section>
+        <section id="threadsView" class="view"></section>
+        <section id="researchView" class="view"></section>
+        <section id="experimentsView" class="view"></section>
+        <section id="papersView" class="view"></section>
+        <section id="sourceView" class="view"></section>
+        <section id="weeklyView" class="view"></section>
+        <section id="qualityView" class="view"></section>
+      </main>
+
+      <aside class="detail-panel" id="detailPanel" aria-label="Node detail">
+        <div class="detail-empty">
+          <h3>Select a node</h3>
+          <p>Click a note, graph node, idea, experiment, or paper to inspect metadata and links.</p>
+        </div>
+      </aside>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

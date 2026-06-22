@@ -1,0 +1,3702 @@
+{
+  "generatedAt": "2026-06-22T17:25:52.556Z",
+  "root": "/Users/schropim/new-ws/Compiler-Research-OS",
+  "nodes": [
+    {
+      "id": "00-inbox-readme",
+      "title": "Inbox",
+      "type": "note",
+      "status": "",
+      "path": "00_inbox/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Temporary capture area for raw notes, links, questions, and tasks before they are triaged into papers, source reading, research, experiments, or knowledge nodes.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "01-daily-2026-mlir-pass-pipeline-mental-model",
+      "title": "MLIR Pass Pipeline Mental Model",
+      "type": "daily_log",
+      "status": "",
+      "path": "01_daily/2026/MLIR Pass Pipeline Mental Model.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "01-daily-2026-mvp-smoke-test-experiment",
+      "title": "MVP Smoke Test Experiment",
+      "type": "daily_log",
+      "status": "",
+      "path": "01_daily/2026/MVP Smoke Test Experiment.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "01-daily-2026-triton-compiler-architecture-reading",
+      "title": "Triton Compiler Architecture Reading",
+      "type": "daily_log",
+      "status": "",
+      "path": "01_daily/2026/Triton Compiler Architecture Reading.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "daily-2026-06-18",
+      "type": "daily_log",
+      "title": "2026-06-18 Daily Log",
+      "date": "2026-06-18",
+      "status": "open",
+      "focus": [
+        "Compiler Research OS MVP",
+        "First batch material planning"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "aliases": [],
+      "related": [
+        [
+          [
+            "Compiler Research OS"
+          ]
+        ],
+        [
+          [
+            "Compiler Architect Skill Tree"
+          ]
+        ]
+      ],
+      "created": "2026-06-18",
+      "updated": "2026-06-19",
+      "path": "01_daily/2026/daily-2026-06-18.md",
+      "wikilinks": [
+        "Compiler Research OS",
+        "Compiler Architect Skill Tree",
+        "MLIR Pass Pipeline Mental Model",
+        "Triton Compiler Architecture Reading",
+        "Baseline Triton Matmul on RTX4060",
+        "MVP Smoke Test Experiment"
+      ],
+      "summary": "- 建立 Compiler Research OS MVP 的第一版骨架。 - 确认系统原则：Git first, Markdown first, Local first, Obsidian compatible, AI native。 - 明确第一批真实材料：daily、research idea、source reading、paper reading、experiment、knowledge nodes。",
+      "sections": {
+        "Today Focus": "- 建立 Compiler Research OS MVP 的第一版骨架。\n- 确认系统原则：Git first, Markdown first, Local first, Obsidian compatible, AI native。\n- 明确第一批真实材料：daily、research idea、source reading、paper reading、experiment、knowledge nodes。\n\nEnglish:\n\n- Build the first MVP skeleton of Compiler Research OS.\n- Confirm the operating principles: Git first, Markdown first, Local first, Obsidian compatible, AI native.\n- Define the first real materials: daily log, research idea, source reading, paper reading, experiment, and knowledge nodes.",
+        "Work Log": "- 创建了基础目录结构。\n- 创建了 Markdown templates、Agent prompts、README 和两个脚本。\n- 生成了第一个 smoke experiment skeleton。\n- 发现并修复了 `new_note.py` 的标题替换问题。",
+        "Learned": "- 这个 OS 的关键不是目录，而是“研究对象之间的可追踪关系”。\n- YAML frontmatter 负责结构化元数据，wikilink 负责 Obsidian 和 AI 可读的知识连接。\n- 实验系统必须从第一天就记录 command、env、raw result 和 analysis，否则后面很难补。",
+        "Questions": "- 第一个源码阅读对象应该选 MLIR pass infrastructure 还是 Triton lowering pipeline？\n- 第一个真实实验应该是 Triton matmul baseline，还是 MLIR pass smoke test？\n- 哪些知识节点应该优先进入 `10_knowledge/concepts/`？",
+        "Ideas Captured": "- [[MLIR Pass Pipeline Mental Model]]\n- [[Triton Compiler Architecture Reading]]\n- [[Baseline Triton Matmul on RTX4060]]",
+        "Experiments": "- [[MVP Smoke Test Experiment]]",
+        "Source Reading": "- 计划阅读：MLIR Pass Infrastructure / MLIR Pass 基础设施。\n- 目标不是一次读完整个 MLIR，而是读懂一个 pass 如何注册、进入 pipeline、遍历 IR、改写 IR。",
+        "Paper Reading": "- 计划建立 Triton compiler architecture 阅读卡。\n- 当前阶段优先读 architecture / pipeline / lowering，而不是追求论文数量。",
+        "Decisions": "- 第一周聚焦 MLIR Pass Infrastructure。\n- 暂不引入数据库、Web 服务或复杂自动化。\n- 所有重要材料先用 Markdown + YAML + wikilink 表达。",
+        "Tomorrow": "- 创建 2026-06-19 daily log。\n- 填写第一个 research idea。\n- 填写第一个 source reading note。\n- 为 smoke experiment 写清楚定位和后续替换方式。"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 0,
+      "outgoing": 8
+    },
+    {
+      "id": "daily-2026-06-19",
+      "type": "daily_log",
+      "title": "2026-06-19 Daily Log",
+      "date": "2026-06-19",
+      "status": "open",
+      "focus": [
+        "MLIR Pass Infrastructure",
+        "Triton Compiler Architecture Reading",
+        "First Reproducible Experiment"
+      ],
+      "tags": [
+        "daily",
+        "compiler-os",
+        "mlir",
+        "triton"
+      ],
+      "aliases": [],
+      "related": [
+        [
+          [
+            "MLIR Pass Pipeline Mental Model"
+          ]
+        ],
+        [
+          [
+            "MLIR Pass Infrastructure First Reading"
+          ]
+        ],
+        [
+          [
+            "Triton Compiler Architecture Reading"
+          ]
+        ],
+        [
+          [
+            "MVP Smoke Test Experiment"
+          ]
+        ]
+      ],
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "01_daily/2026/daily-2026-06-19.md",
+      "wikilinks": [
+        "MLIR Pass Pipeline Mental Model",
+        "MLIR Pass Infrastructure First Reading",
+        "Triton Compiler Architecture Reading",
+        "MVP Smoke Test Experiment",
+        "Baseline Triton Matmul on RTX4060"
+      ],
+      "summary": "今天的目标不是扩展系统，而是开始使用系统。",
+      "sections": {
+        "Today Focus": "今天的目标不是扩展系统，而是开始使用系统。\n\nToday's goal is not to expand the system, but to use it.\n\nFocus:\n\n- 建立第一个 research idea：[[MLIR Pass Pipeline Mental Model]]\n- 建立第一个 source reading note：[[MLIR Pass Infrastructure First Reading]]\n- 建立第一张 Triton architecture reading card：[[Triton Compiler Architecture Reading]]\n- 把 smoke experiment 定位为实验系统自检，而不是正式性能实验。",
+        "Work Log": "- 梳理 Compiler Research OS 第一批材料。\n- 将当前季度 focus 收敛到 MLIR Pass Infrastructure 和 Triton Compilation Pipeline。\n- 明确第一周的可执行目标：读一个 pass、建一张 Triton 架构卡、跑一个最小实验、抽取 5 个知识节点。",
+        "Learned": "- 一个好的 research OS 必须逼迫我回答：这个材料和哪个 problem、hypothesis、experiment 或 architecture decision 有关？\n- Source reading 不应该只是翻译代码，而应该提取 entry point、control flow、data flow、invariant 和 design intent。\n- Paper reading 不应该只写摘要，而应该输出 claim、evidence、limitation 和 reproduction plan。\n\nEnglish summary:\n\n- A research OS should force every note to connect to a problem, hypothesis, experiment, or architecture decision.\n- Source reading should extract entry points, control flow, data flow, invariants, and design intent.\n- Paper reading should produce claims, evidence, limitations, and a reproduction plan.",
+        "Questions": "- MLIR pass infrastructure 的最小闭环阅读路径是什么？\n- Triton 的 lowering pipeline 中，哪些阶段直接影响 scheduler / memory planner？\n- RTX4060 上的第一个 benchmark 应该选 matmul、elementwise fusion，还是 attention microkernel？",
+        "Ideas Captured": "- [[MLIR Pass Pipeline Mental Model]]：建立一个从 pass registration 到 IR rewrite 的心智模型。\n- [[Baseline Triton Matmul on RTX4060]]：用最小 matmul benchmark 建立实验记录规范。",
+        "Experiments": "- 当前 smoke experiment：[[MVP Smoke Test Experiment]]\n- 下一步真实实验候选：Baseline Triton Matmul on RTX4060。",
+        "Source Reading": "- 今日候选：[[MLIR Pass Infrastructure First Reading]]\n- 重点问题：\n  - Pass 如何被注册？\n  - Pass 如何进入 pipeline？\n  - Pass 如何访问和修改 Operation？\n  - Pass failure 如何传播？",
+        "Paper Reading": "- 今日候选：[[Triton Compiler Architecture Reading]]\n- 阅读目标：\n  - Triton 的 compiler stack 分层。\n  - Python DSL 到 TTIR/TTGIR/LLVM/PTX 的路径。\n  - Scheduler 和 memory optimization 插在什么位置。",
+        "Decisions": "- 第一周只追一个主题：MLIR Pass Infrastructure。\n- Triton 阅读作为 GPU compiler architecture 对照，不展开成大型项目。\n- 每个新 note 都必须至少有一个 `related` 链接。",
+        "Tomorrow": "- 选择一个具体 MLIR pass 文件开始阅读。\n- 为第一个 Triton matmul baseline 创建正式 experiment。\n- 抽取或完善 5 个 knowledge nodes。"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 1,
+      "outgoing": 9
+    },
+    {
+      "id": "01-daily-readme",
+      "title": "Daily",
+      "type": "daily_log",
+      "status": "",
+      "path": "01_daily/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Daily logs, weekly reports, and monthly reviews. Use this layer to preserve work context and extract durable knowledge later.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "02-papers-readme",
+      "title": "Papers",
+      "type": "paper",
+      "status": "",
+      "path": "02_papers/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Paper reading workspace for inbox items, active reading notes, completed notes, topic maps, paper cards, and related work summaries.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "paper-triton-compiler-architecture-reading",
+      "type": "paper",
+      "title": "Triton Compiler Architecture Reading",
+      "authors": [],
+      "year": "",
+      "venue": "",
+      "status": "reading",
+      "topics": [
+        "triton",
+        "gpu-compiler",
+        "compiler-architecture",
+        "scheduler",
+        "memory"
+      ],
+      "pdf": "",
+      "code": "",
+      "tags": [
+        "paper",
+        "triton",
+        "gpu-compiler"
+      ],
+      "aliases": [
+        "Triton 编译器架构阅读"
+      ],
+      "related": {
+        "concepts": [
+          [
+            [
+              "Triton Compilation Pipeline"
+            ]
+          ],
+          [
+            [
+              "GPU Occupancy"
+            ]
+          ],
+          [
+            [
+              "Memory Hierarchy"
+            ]
+          ]
+        ],
+        "projects": [
+          [
+            [
+              "Compiler Research OS"
+            ]
+          ]
+        ],
+        "ideas": [
+          [
+            [
+              "MLIR Pass Pipeline Mental Model"
+            ]
+          ]
+        ],
+        "experiments": [
+          [
+            [
+              "MVP Smoke Test Experiment"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "02_papers/reading/paper-triton-compiler-architecture-reading.md",
+      "wikilinks": [
+        "Triton Compilation Pipeline",
+        "GPU Occupancy",
+        "Memory Hierarchy",
+        "Compiler Research OS",
+        "MLIR Pass Pipeline Mental Model",
+        "MVP Smoke Test Experiment"
+      ],
+      "summary": "Triton 是一个面向 GPU tensor program 的编译器栈，核心价值在于把高层 Python DSL 映射到可优化的中间表示和目标 GPU 代码。",
+      "sections": {
+        "One-line Summary": "Triton 是一个面向 GPU tensor program 的编译器栈，核心价值在于把高层 Python DSL 映射到可优化的中间表示和目标 GPU 代码。\n\nTriton is a GPU tensor program compiler stack that maps a high-level Python DSL into optimizable intermediate representations and target GPU code.",
+        "Problem": "手写 CUDA kernel 成本高，传统框架难以同时兼顾生产力和接近手写 kernel 的性能。Triton 试图在 DSL、compiler IR、schedule 和 codegen 之间找到一个工程可用的平衡。\n\nWriting CUDA kernels by hand is expensive. Traditional frameworks struggle to combine productivity with near-handwritten performance. Triton tries to balance DSL design, compiler IR, scheduling, and code generation.",
+        "Key Idea": "用 block-level tensor program abstraction 表达 GPU kernel，并通过 compiler pipeline 进行 lowering、optimization 和 target-specific code generation。\n\nUse a block-level tensor program abstraction for GPU kernels, then lower and optimize it through a compiler pipeline toward target-specific code generation.",
+        "Method": "本阅读卡暂不假设具体论文结论，优先建立架构阅读框架：\n\n1. Python DSL 层表达 computation。\n2. Frontend 生成 Triton IR。\n3. 中间层执行 canonicalization、optimization、layout / memory / scheduling 相关 transformation。\n4. Lowering 到 LLVM / PTX 相关路径。\n5. 通过 benchmark 和 profiler 验证 schedule 与 memory decision。",
+        "Compiler / Architecture Relevance": "与我的长期目标直接相关：\n\n- Scheduler Optimization: tile、num warps、num stages、pipeline strategy。\n- Memory Optimization: shared memory、register pressure、memory coalescing、layout。\n- Compiler Architecture: DSL -> IR -> optimization -> lowering -> codegen。\n- Hardware-Compiler Co-design: GPU resource constraints shape compiler decisions。",
+        "Claims": "当前不写强 claim，只记录待验证问题：\n\n- Triton 的 block-level abstraction 是否足够表达主流 tensor kernels？\n- Triton 的编译路径中，哪些阶段最影响 scheduler decision？\n- 用户可见 meta-parameters 和 compiler internal decisions 的边界在哪里？",
+        "Evidence": "待通过源码阅读、官方文档、实验和 profiler 结果补充。",
+        "Limitations": "- 如果只读 tutorial，容易忽略 compiler pipeline 的真实复杂度。\n- 如果只看 benchmark，容易忽略 IR 和 lowering 约束。\n- RTX4060 资源有限，不能直接外推到 A/H 系列 GPU。",
+        "Reproduction Plan": "第一阶段只做最小复现：\n\n1. 跑通 Triton matmul baseline。\n2. 记录 shape、dtype、num warps、num stages、block size。\n3. dump IR / PTX，如果环境支持。\n4. 对比至少两组 schedule config。\n5. 记录 latency、TFLOPS、register/shared memory 信息。",
+        "Related Work": "- CUDA programming model\n- MLIR lowering infrastructure\n- TVM schedule / TensorIR\n- TensorRT kernel optimization",
+        "Personal Takeaways": "Triton 应该作为“AI compiler architecture 的可执行样本”来读，而不只是作为一个 kernel DSL 来用。\n\nTriton should be read as an executable sample of AI compiler architecture, not merely as a kernel DSL.",
+        "Follow-up Ideas": "- [[MLIR Pass Pipeline Mental Model]]\n- Baseline Triton Matmul on RTX4060\n- Shared-memory-aware schedule exploration"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 15,
+      "outgoing": 12
+    },
+    {
+      "id": "03-source-reading-readme",
+      "title": "Source Reading",
+      "type": "source_reading",
+      "status": "",
+      "path": "03_source_reading/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Source reading notes for LLVM, MLIR, Triton, CUDA, TileLang, TVM, and related compiler systems. Focus on architecture, control flow, data flow, invariants, and design intent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "src-mlir-pass-infrastructure-first-reading",
+      "type": "source_reading",
+      "title": "MLIR Pass Infrastructure First Reading",
+      "system": "MLIR",
+      "repo": "llvm-project",
+      "commit": "",
+      "path": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md",
+      "status": "planned",
+      "tags": [
+        "source-reading",
+        "mlir",
+        "pass"
+      ],
+      "aliases": [
+        "MLIR Pass 基础设施第一次阅读"
+      ],
+      "related": {
+        "concepts": [
+          [
+            [
+              "MLIR Pass Pipeline"
+            ]
+          ],
+          [
+            [
+              "Compiler Pass"
+            ]
+          ],
+          [
+            [
+              "IR Transformation"
+            ]
+          ]
+        ],
+        "papers": [
+          [
+            [
+              "Triton Compiler Architecture Reading"
+            ]
+          ]
+        ],
+        "experiments": [
+          [
+            [
+              "MVP Smoke Test Experiment"
+            ]
+          ]
+        ],
+        "projects": [
+          [
+            [
+              "Compiler Research OS"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "wikilinks": [
+        "MLIR Pass Pipeline",
+        "Compiler Pass",
+        "IR Transformation",
+        "Triton Compiler Architecture Reading",
+        "MVP Smoke Test Experiment",
+        "Compiler Research OS"
+      ],
+      "summary": "建立 MLIR pass 的最小心智模型：一个 pass 从定义、注册、进入 pipeline，到遍历并改写 IR 的路径。",
+      "sections": {
+        "Purpose": "建立 MLIR pass 的最小心智模型：一个 pass 从定义、注册、进入 pipeline，到遍历并改写 IR 的路径。\n\nBuild a minimal mental model of MLIR passes: how a pass is defined, registered, inserted into a pipeline, and used to traverse and rewrite IR.",
+        "File Role": "待选择具体文件。候选方向：\n\n- Pass registration / Pass 注册\n- Pass manager / Pass 管理器\n- Pattern rewrite driver / Pattern 改写驱动\n- Canonicalization pass / 规范化 pass",
+        "Entry Points": "阅读时优先寻找：\n\n- pass class / pass wrapper\n- registration function\n- pipeline builder\n- `runOnOperation`\n- analysis access\n- failure signal",
+        "Key Classes": "待源码阅读后填写：\n\n- `Pass`\n- `OperationPass`\n- `PassManager`\n- `OpPassManager`\n- `PatternRewriter`",
+        "Key Functions": "待源码阅读后填写。",
+        "Control Flow": "目标控制流：\n\n```text\nregister pass\n-> construct pipeline\n-> pass manager schedules pass\n-> pass receives operation\n-> pass reads analyses or IR\n-> pass rewrites IR\n-> pass signals success/failure\n```",
+        "Data Flow": "重点观察：\n\n- IR object 如何被传入 pass。\n- analysis result 如何被获取。\n- rewrite 如何改变 operation / region / block / value。\n- failure 是否会中断 pipeline。",
+        "Important Invariants": "初始假设，待源码验证：\n\n- pass 必须维护 IR verifier 能检查的结构约束。\n- rewrite 后 use-def chain 必须仍然合法。\n- pass failure 不能留下不可恢复的中间状态，除非 pipeline 明确终止。",
+        "Design Intent": "MLIR pass infrastructure 的设计意图可能包括：\n\n- 支持多层 IR abstraction。\n- 支持 dialect-specific transformation。\n- 支持 pass pipeline composition。\n- 支持 analysis preservation / invalidation。\n\n以上是推断，需要源码和文档验证。",
+        "What Surprised Me": "待填写。",
+        "Questions": "- PassManager 如何处理 nested operations？\n- MLIR pass 和 LLVM pass 在 pipeline 组织上最本质的差异是什么？\n- Pattern rewrite 和普通 pass 的边界在哪里？\n- failure propagation 对工程调试有什么影响？",
+        "Related Experiments": "- 构造一个小 IR，运行一个 canonicalization 或 conversion pass。\n- 保存 before/after IR。\n- 人工制造一个非法 IR，观察 verifier 和 pass failure。",
+        "Summary": "这是第一篇 MLIR source reading note。它的完成标准不是“读完很多文件”，而是能够解释一个 pass 的生命周期和最小 before/after transformation。"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 10,
+      "outgoing": 12
+    },
+    {
+      "id": "04-research-readme",
+      "title": "Research",
+      "type": "note",
+      "status": "",
+      "path": "04_research/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Research pipeline workspace for observations, ideas, problems, hypotheses, experiment designs, claims, drafts, and research threads.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "idea-2026-0001",
+      "type": "research_idea",
+      "title": "MLIR Pass Pipeline Mental Model",
+      "status": "seed",
+      "maturity": 1,
+      "topics": [
+        "mlir",
+        "pass-pipeline",
+        "compiler-architecture"
+      ],
+      "tags": [
+        "research-idea",
+        "mlir",
+        "compiler-architecture"
+      ],
+      "aliases": [
+        "MLIR Pass 心智模型"
+      ],
+      "derived_from": [
+        [
+          [
+            "2026-06-19 Daily Log"
+          ]
+        ]
+      ],
+      "related": {
+        "problems": [
+          [
+            [
+              "Understanding Compiler Transformation Pipelines"
+            ]
+          ]
+        ],
+        "hypotheses": [],
+        "experiments": [
+          [
+            [
+              "MVP Smoke Test Experiment"
+            ]
+          ]
+        ],
+        "projects": [
+          [
+            [
+              "Compiler Research OS"
+            ]
+          ]
+        ],
+        "papers": [
+          [
+            [
+              "Triton Compiler Architecture Reading"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md",
+      "wikilinks": [
+        "2026-06-19 Daily Log",
+        "Understanding Compiler Transformation Pipelines",
+        "MVP Smoke Test Experiment",
+        "Compiler Research OS",
+        "Triton Compiler Architecture Reading",
+        "MLIR Pass Infrastructure First Reading",
+        "MLIR Pass Pipeline"
+      ],
+      "summary": "很多 compiler 学习会卡在“知道有 pass，但不知道 pass 在系统中如何被组织、调度、约束和组合”。",
+      "sections": {
+        "Observation": "很多 compiler 学习会卡在“知道有 pass，但不知道 pass 在系统中如何被组织、调度、约束和组合”。\n\nMany compiler learning paths get stuck at knowing that passes exist, without understanding how passes are organized, scheduled, constrained, and composed inside the compiler.",
+        "Problem": "如果没有 MLIR pass pipeline 的心智模型，很难进一步设计 Dialect、Lowering、Scheduler 或 Memory Planner。\n\nWithout a pass pipeline mental model, it is difficult to design dialects, lowering flows, schedulers, or memory planners.",
+        "Hypothesis": "如果从一个具体 pass 出发，追踪 registration、pipeline construction、operation traversal、IR rewrite 和 failure propagation，就能建立一个可复用的 pass reading framework。\n\nIf I start from one concrete pass and trace registration, pipeline construction, operation traversal, IR rewrite, and failure propagation, I can build a reusable framework for reading compiler passes.",
+        "Why It Matters": "- Scheduler 通常不是孤立算法，而是 pass pipeline 中某个 transformation 或 analysis 的一部分。\n- Memory planner 依赖 IR 层级、liveness、aliasing 和 lowering boundary。\n- Compiler architecture 判断来自对 pipeline boundary 和 invariant 的理解。",
+        "Related Work": "- MLIR official documentation / MLIR 官方文档\n- LLVM pass infrastructure / LLVM Pass 基础设施\n- Triton compiler pipeline / Triton 编译流水线",
+        "Possible Approach": "1. 选择一个简单 MLIR pass。\n2. 找到 pass registration。\n3. 找到 pass pipeline 中的入口。\n4. 阅读 pass 如何遍历 Operation。\n5. 记录 before/after IR。\n6. 提取 correctness invariant。\n7. 产出一篇 source reading note 和一个 knowledge node。",
+        "Minimal Experiment": "构造一个小 MLIR IR 文件，运行目标 pass，保存 before/after IR，并记录：\n\n- command\n- pass pipeline\n- input IR\n- output IR\n- failure case",
+        "Risks": "- 只读代码不跑 IR，容易形成虚假的理解。\n- 过早深入 MLIR 全局架构，导致第一周失焦。\n- 混淆“代码事实”和“架构推断”。",
+        "Expected Output": "- [[MLIR Pass Infrastructure First Reading]]\n- [[MLIR Pass Pipeline]]\n- 一个最小 pass before/after IR 实验。",
+        "Next Action": "选择第一个 MLIR pass 文件，并创建对应 source reading note。"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 13,
+      "outgoing": 11,
+      "ideaHealth": {
+        "checks": {
+          "Observation": true,
+          "Problem": true,
+          "Hypothesis": true,
+          "Related Work": true,
+          "Minimal Experiment": true,
+          "Next Action": true,
+          "paper": true,
+          "sourceReading": true,
+          "experiment": true,
+          "knowledge": true
+        },
+        "connectedTypes": [
+          "daily_log",
+          "paper",
+          "knowledge_node",
+          "experiment",
+          "note",
+          "source_reading"
+        ],
+        "done": 10,
+        "total": 10,
+        "score": 1
+      }
+    },
+    {
+      "id": "05-experiments-readme",
+      "title": "Experiments",
+      "type": "workflow",
+      "status": "",
+      "path": "05_experiments/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Reproducible experiment records. Every experiment should preserve metadata, commands, environment, raw results, analysis, and artifacts.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "remote-experiment-workflow",
+      "type": "workflow",
+      "title": "Remote Experiment Workflow",
+      "status": "active",
+      "tags": [
+        "workflow",
+        "experiment",
+        "remote-sync"
+      ],
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "related": {
+        "skills": [
+          [
+            [
+              "compiler-research-os-workflow"
+            ]
+          ]
+        ]
+      },
+      "path": "05_experiments/REMOTE_WORKFLOW.md",
+      "aliases": [],
+      "wikilinks": [
+        "compiler-research-os-workflow"
+      ],
+      "summary": "- Build LLVM / MLIR / Triton / CUDA experiments. - Run benchmark and profiler. - Produce portable artifacts. - Record exact environment and command.",
+      "sections": {
+        "Core Pattern": "```text\nPlan locally\n-> Run remotely\n-> Sync evidence\n-> Analyze locally\n-> Extract knowledge\n```",
+        "Linux Host Responsibility": "- Build LLVM / MLIR / Triton / CUDA experiments.\n- Run benchmark and profiler.\n- Produce portable artifacts.\n- Record exact environment and command.",
+        "Compiler Research OS Responsibility": "- Store metadata, summaries, raw small results, analysis, and decisions.\n- Link experiment to paper, source reading, idea, and knowledge nodes.\n- Preserve evidence trail.",
+        "Recommended Layout": "Linux host:\n\n```text\n~/work/Compiler-Research-OS\n~/work/compiler-experiments\n~/work/llvm-project\n~/work/triton\n~/work/artifacts\n```\n\nLocal machine:\n\n```text\n/Users/schropim/new-ws/Compiler-Research-OS\n```",
+        "Sync Options": "Preferred:\n\n```bash\ngit pull\ngit add 05_experiments 03_source_reading 04_research 10_knowledge\ngit commit -m \"Add experiment result: exp-YYYY-NNNN\"\ngit push\n```\n\nFast artifact pull:\n\n```bash\nrsync -avz user@linux-host:~/work/Compiler-Research-OS/05_experiments/active/exp-YYYY-NNNN-name/ ./05_experiments/active/exp-YYYY-NNNN-name/\n```",
+        "Git Policy": "Commit:\n\n- Markdown\n- YAML\n- small CSV\n- summaries\n- commands\n- environment\n- compact IR/PTX\n\nKeep remote:\n\n- build trees\n- large traces\n- Nsight reports\n- cubin archives\n- binaries\n- model weights"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 0,
+      "outgoing": 2
+    },
+    {
+      "id": "exp-2026-0001-mvp-smoke-test-experiment",
+      "title": "MVP Smoke Test Experiment",
+      "type": "experiment",
+      "status": "",
+      "path": "05_experiments/active/exp-2026-0001-mvp-smoke-test-experiment/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "验证 Compiler Research OS 的 experiment skeleton 是否可用。",
+      "sections": {
+        "Goal": "验证 Compiler Research OS 的 experiment skeleton 是否可用。\n\nValidate whether the Compiler Research OS experiment skeleton is usable.\n\n这个实验不是正式性能实验，不应该用于任何 compiler performance claim。它的价值在于确认实验目录、metadata、run script、env capture、result capture 和 analysis 文件是否完整。\n\nThis is not a performance experiment and should not support any compiler performance claim. Its value is to validate the experiment directory, metadata, run script, environment capture, result capture, and analysis structure.",
+        "Hypothesis": "如果一个实验目录包含 metadata、run.sh、env.txt、inputs、configs、results 和 analysis，那么后续真实实验可以复用这个结构并保持可复现。\n\nIf an experiment directory contains metadata, run.sh, env.txt, inputs, configs, results, and analysis, then future real experiments can reuse the structure and remain reproducible.",
+        "How to Run": "```bash\n./run.sh\n```\n\nExpected behavior:\n\n- collect basic environment into `env.txt`\n- create or update `results/raw.txt`\n- avoid failing when Git or `nvidia-smi` is unavailable",
+        "Artifacts": "- `metadata.yaml`\n- `env.txt`\n- `inputs/`\n- `configs/`\n- `dumps/`\n- `profiles/`\n- `results/`\n- `analysis.md`",
+        "Reproducibility Checklist": "- [ ] Git commit recorded\n- [ ] Git dirty state recorded\n- [x] Environment recorded\n- [ ] GPU and CUDA recorded\n- [ ] Input shapes recorded\n- [x] Commands recorded\n- [x] Raw results preserved\n- [ ] Analysis written",
+        "Next Real Experiment": "建议下一个正式实验：\n\n```text\nBaseline Triton Matmul on RTX4060\n```\n\n目标：\n\n- 跑通一个最小 Triton matmul benchmark。\n- 记录 shape、dtype、block size、num warps、num stages。\n- 记录 latency / TFLOPS。\n- 如果环境支持，保存 IR / PTX dump。\n- 至少比较两组 schedule config。"
+      },
+      "checklist": {
+        "total": 8,
+        "done": 3,
+        "ratio": 0.375,
+        "items": [
+          {
+            "checked": false,
+            "text": "Git commit recorded"
+          },
+          {
+            "checked": false,
+            "text": "Git dirty state recorded"
+          },
+          {
+            "checked": true,
+            "text": "Environment recorded"
+          },
+          {
+            "checked": false,
+            "text": "GPU and CUDA recorded"
+          },
+          {
+            "checked": false,
+            "text": "Input shapes recorded"
+          },
+          {
+            "checked": true,
+            "text": "Commands recorded"
+          },
+          {
+            "checked": true,
+            "text": "Raw results preserved"
+          },
+          {
+            "checked": false,
+            "text": "Analysis written"
+          }
+        ]
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 9,
+      "outgoing": 0,
+      "experimentHealth": {
+        "metadata": true,
+        "runScript": true,
+        "analysis": true,
+        "summary": true,
+        "inputs": true,
+        "config": true,
+        "env": true,
+        "rawResult": true,
+        "done": 8,
+        "total": 8,
+        "score": 1
+      }
+    },
+    {
+      "id": "05-experiments-active-exp-2026-0001-mvp-smoke-test-experiment-analysis",
+      "title": "Analysis",
+      "type": "experiment_artifact",
+      "status": "",
+      "path": "05_experiments/active/exp-2026-0001-mvp-smoke-test-experiment/analysis.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "这个 experiment skeleton 是否足以支撑后续可复现实验？",
+      "sections": {
+        "Question": "这个 experiment skeleton 是否足以支撑后续可复现实验？\n\nIs this experiment skeleton sufficient for future reproducible experiments?",
+        "Hypothesis": "包含 metadata、run.sh、env.txt、inputs、configs、results 和 analysis 的目录结构，可以作为后续 compiler experiments 的最小标准。\n\nA directory structure containing metadata, run.sh, env.txt, inputs, configs, results, and analysis can serve as the minimal standard for future compiler experiments.",
+        "Evidence": "- `run.sh` 可以执行。\n- `env.txt` 可以记录基础环境。\n- `results/raw.txt` 可以保存原始输出。\n- 当前环境中没有 Git repo 或 `nvidia-smi` 时，脚本仍能继续运行。",
+        "Interpretation": "实验骨架可用，但还没有真实 compiler workload，因此不能产生性能结论。\n\nThe skeleton is usable, but it does not contain a real compiler workload yet, so it cannot produce performance conclusions.",
+        "Surprises": "无。",
+        "Failure Modes": "- 如果后续真实实验不记录 git commit，将无法复现具体代码状态。\n- 如果只保存 summary 而不保存 raw result，后续分析会失去证据链。\n- 如果不保存 input shape 和 compiler flags，benchmark 数字不可比较。",
+        "Confidence": "中等。目录结构和脚本可用，但仍需要一个真实 Triton benchmark 验证完整工作流。\n\nMedium. The directory structure and script work, but a real Triton benchmark is still needed to validate the full workflow.",
+        "Conclusion": "保留该 smoke experiment 作为系统自检样例。正式研究从下一个 experiment 开始。\n\nKeep this smoke experiment as a system self-check example. Real research should start from the next experiment.",
+        "Next Experiment": "Baseline Triton Matmul on RTX4060。"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "05-experiments-active-exp-2026-0001-mvp-smoke-test-experiment-results-summary",
+      "title": "Result Summary",
+      "type": "experiment_artifact",
+      "status": "",
+      "path": "05_experiments/active/exp-2026-0001-mvp-smoke-test-experiment/results/summary.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Summary Table": "",
+        "Best Case": "",
+        "Worst Case": "",
+        "Baseline Comparison": "",
+        "Raw Files": "",
+        "Notes": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "title": "Baseline Triton Matmul on RTX4060",
+      "type": "experiment",
+      "status": "",
+      "path": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [
+        "Triton Compiler Architecture Reading",
+        "Triton Compilation Pipeline",
+        "GPU Occupancy",
+        "Memory Hierarchy"
+      ],
+      "summary": "建立第一个真实 compiler experiment baseline：在 RTX4060 上运行 Triton matmul microbenchmark，并记录可复现的环境、输入、编译参数、raw result 和分析结论。",
+      "sections": {
+        "Goal": "建立第一个真实 compiler experiment baseline：在 RTX4060 上运行 Triton matmul microbenchmark，并记录可复现的环境、输入、编译参数、raw result 和分析结论。\n\nBuild the first real compiler experiment baseline: run a Triton matmul microbenchmark on RTX4060 and record reproducible environment, inputs, compiler parameters, raw results, and analysis.\n\n这个实验的重点不是刷出最高 TFLOPS，而是建立后续 scheduler / memory planner 实验的 baseline protocol。\n\nThe goal is not to maximize TFLOPS. The goal is to establish a baseline protocol for future scheduler and memory planner experiments.",
+        "Hypothesis": "不同 Triton schedule meta-parameters，如 block size、num warps 和 num stages，会显著影响 latency、TFLOPS、register pressure 和 shared memory usage。\n\nDifferent Triton schedule meta-parameters, such as block size, num warps, and num stages, can significantly affect latency, TFLOPS, register pressure, and shared memory usage.",
+        "How to Run": "```bash\n./run.sh\n```\n\n当前 `run.sh` 只是实验骨架。正式 benchmark 接入后，应执行：\n\n```text\ncollect environment\n-> run Triton matmul benchmark\n-> save raw result\n-> optionally dump IR/PTX\n-> summarize result\n```",
+        "Artifacts": "- `metadata.yaml`\n- `env.txt`\n- `inputs/`\n- `configs/`\n- `dumps/`\n- `profiles/`\n- `results/`\n- `analysis.md`",
+        "Reproducibility Checklist": "- [ ] Git commit recorded\n- [ ] Git dirty state recorded\n- [ ] Environment recorded\n- [ ] GPU and CUDA recorded\n- [ ] Input shapes recorded\n- [ ] Commands recorded\n- [ ] Raw results preserved\n- [ ] Analysis written",
+        "Experiment Variables": "Independent variables:\n\n- matrix shape: M, N, K\n- dtype: fp16 / bf16 / fp32\n- block size: BLOCK_M, BLOCK_N, BLOCK_K\n- `num_warps`\n- `num_stages`\n\nDependent metrics:\n\n- latency_ms\n- TFLOPS\n- bandwidth_gbps\n- register_count, if available\n- shared_memory_bytes, if available\n- occupancy, if profiler data is available",
+        "Initial Shape Plan": "Start small and boring:\n\n```text\nM=N=K=1024, dtype=fp16\nM=N=K=2048, dtype=fp16\nM=4096, N=4096, K=1024, dtype=fp16\n```\n\nDo not expand the matrix zoo until the result format is stable.",
+        "Related Notes": "- [[Triton Compiler Architecture Reading]]\n- [[Triton Compilation Pipeline]]\n- [[GPU Occupancy]]\n- [[Memory Hierarchy]]"
+      },
+      "checklist": {
+        "total": 8,
+        "done": 0,
+        "ratio": 0,
+        "items": [
+          {
+            "checked": false,
+            "text": "Git commit recorded"
+          },
+          {
+            "checked": false,
+            "text": "Git dirty state recorded"
+          },
+          {
+            "checked": false,
+            "text": "Environment recorded"
+          },
+          {
+            "checked": false,
+            "text": "GPU and CUDA recorded"
+          },
+          {
+            "checked": false,
+            "text": "Input shapes recorded"
+          },
+          {
+            "checked": false,
+            "text": "Commands recorded"
+          },
+          {
+            "checked": false,
+            "text": "Raw results preserved"
+          },
+          {
+            "checked": false,
+            "text": "Analysis written"
+          }
+        ]
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 2,
+      "outgoing": 4,
+      "experimentHealth": {
+        "metadata": true,
+        "runScript": true,
+        "analysis": true,
+        "summary": true,
+        "inputs": true,
+        "config": true,
+        "env": false,
+        "rawResult": false,
+        "done": 6,
+        "total": 8,
+        "score": 0.75
+      }
+    },
+    {
+      "id": "05-experiments-active-exp-2026-0002-baseline-triton-matmul-on-rtx4060-analysis",
+      "title": "Analysis",
+      "type": "experiment_artifact",
+      "status": "",
+      "path": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/analysis.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Triton matmul 在 RTX4060 上的 baseline performance 是什么？哪些 schedule meta-parameters 最先影响性能？",
+      "sections": {
+        "Question": "Triton matmul 在 RTX4060 上的 baseline performance 是什么？哪些 schedule meta-parameters 最先影响性能？\n\nWhat is the baseline performance of Triton matmul on RTX4060? Which schedule meta-parameters affect performance first?",
+        "Hypothesis": "block size、num warps 和 num stages 会通过 occupancy、register pressure、shared memory usage 和 memory access behavior 影响 latency 与 TFLOPS。\n\nBlock size, num warps, and num stages affect latency and TFLOPS through occupancy, register pressure, shared memory usage, and memory access behavior.",
+        "Evidence": "待 benchmark 运行后填写。\n\nTo be filled after benchmark execution.\n\nExpected evidence:\n\n- raw latency table\n- TFLOPS table\n- schedule config table\n- environment snapshot\n- profiler or compiler resource report, if available",
+        "Interpretation": "待填写。注意区分：\n\n- 数据事实 / measured facts\n- 可能解释 / possible explanations\n- 需要后续实验验证的推断 / hypotheses requiring follow-up experiments",
+        "Surprises": "待填写。",
+        "Failure Modes": "- benchmark 没有 warmup，导致 first-run overhead 污染结果。\n- 没有固定 seed 或 input shape，导致结果不可比。\n- 只看 TFLOPS，不看 register/shared memory/resource usage。\n- 在 RTX4060 上得到的结论被错误外推到 A100/H100。",
+        "Confidence": "当前为低。实验尚未运行。\n\nLow. The benchmark has not been run yet.",
+        "Conclusion": "待填写。",
+        "Next Experiment": "如果 baseline 跑通，下一步做 controlled schedule sweep：\n\n```text\nfixed shape\nfixed dtype\nvary one schedule parameter at a time\nrecord latency/resource/profiler metrics\n```"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "05-experiments-active-exp-2026-0002-baseline-triton-matmul-on-rtx4060-results-summary",
+      "title": "Result Summary",
+      "type": "experiment_artifact",
+      "status": "",
+      "path": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/results/summary.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Summary Table": "",
+        "Best Case": "",
+        "Worst Case": "",
+        "Baseline Comparison": "",
+        "Raw Files": "",
+        "Notes": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "06-projects-readme",
+      "title": "Projects",
+      "type": "note",
+      "status": "",
+      "path": "06_projects/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Project notes that connect this OS to implementation repositories such as scheduler-lab, memory-planner-lab, arch-simulator, and compiler-experiments.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "07-architecture-readme",
+      "title": "Architecture",
+      "type": "adr",
+      "status": "",
+      "path": "07_architecture/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Architecture decision records, proposals, design reviews, design docs, and principles. Use this directory to build compiler architect judgment over time.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "08-outputs-readme",
+      "title": "Outputs",
+      "type": "note",
+      "status": "",
+      "path": "08_outputs/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "External-facing outputs such as blogs, talks, papers, technical reports, and open-source documentation.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "adr-YYYY-NNNN",
+      "type": "template",
+      "title": "ADR: Title",
+      "status": "proposed",
+      "date": "YYYY-MM-DD",
+      "decision_owner": "me",
+      "tags": [
+        "adr"
+      ],
+      "aliases": [],
+      "related": {
+        "projects": [],
+        "alternatives": [],
+        "experiments": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/adr.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Context": "",
+        "Decision": "",
+        "Consequences": "",
+        "Alternatives Considered": "",
+        "Validation": "",
+        "Revisit Condition": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "daily-YYYY-MM-DD",
+      "type": "template",
+      "title": "YYYY-MM-DD Daily Log",
+      "date": "YYYY-MM-DD",
+      "status": "open",
+      "focus": [],
+      "tags": [
+        "daily"
+      ],
+      "aliases": [],
+      "related": [],
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/daily_log.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Today Focus": "",
+        "Work Log": "",
+        "Learned": "",
+        "Questions": "",
+        "Ideas Captured": "",
+        "Experiments": "",
+        "Source Reading": "",
+        "Paper Reading": "",
+        "Decisions": "",
+        "Tomorrow": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "exp-YYYY-NNNN",
+      "type": "template",
+      "title": "Experiment",
+      "status": "planned",
+      "project": "",
+      "git_repo": "",
+      "git_commit": "",
+      "gpu": "",
+      "cuda": "",
+      "driver": "",
+      "tags": [
+        "experiment"
+      ],
+      "aliases": [],
+      "related": {
+        "idea": [],
+        "hypothesis": [],
+        "paper": [],
+        "project": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/experiment_record.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Goal": "",
+        "Hypothesis": "",
+        "Environment": "",
+        "Inputs": "",
+        "Commands": "",
+        "Artifacts": "",
+        "Results": "",
+        "Analysis": "",
+        "Conclusion": "",
+        "Reproducibility": "",
+        "Next Action": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "fail-YYYY-NNNN",
+      "type": "template",
+      "title": "Failed Experiment",
+      "status": "open",
+      "experiment": "",
+      "failure_type": "",
+      "root_cause": "",
+      "tags": [
+        "failed-experiment"
+      ],
+      "aliases": [],
+      "related": {
+        "experiments": [],
+        "ideas": [],
+        "projects": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/failed_experiment.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "What Failed": "",
+        "Expected": "",
+        "Actual": "",
+        "Symptoms": "",
+        "Evidence": "",
+        "Root Cause Analysis": "",
+        "Lesson": "",
+        "Follow-up": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "concept-name",
+      "type": "template",
+      "node_type": "concept",
+      "title": "Knowledge Node",
+      "status": "evergreen",
+      "tags": [
+        "knowledge"
+      ],
+      "aliases": [],
+      "related": {
+        "related_to": [],
+        "depends_on": [],
+        "supports": [],
+        "contradicts": [],
+        "used_by": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/knowledge_node.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Definition": "",
+        "Mental Model": "",
+        "Why It Matters": "",
+        "Compiler Relevance": "",
+        "Key Tradeoffs": "",
+        "Examples": "",
+        "Related Concepts": "",
+        "Open Questions": "",
+        "References": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "monthly-YYYY-MM",
+      "type": "template",
+      "month": "YYYY-MM",
+      "status": "draft",
+      "tags": [
+        "monthly-review"
+      ],
+      "aliases": [],
+      "related": [],
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "title": "Monthly Review YYYY-MM",
+      "path": "09_templates/monthly_review.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Progress": "",
+        "Skill Growth": "",
+        "Research Progress": "",
+        "Engineering Progress": "",
+        "Outputs": "",
+        "Bottlenecks": "",
+        "Roadmap Adjustment": "",
+        "Next Month": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "paper-short-title-year",
+      "type": "template",
+      "title": "Paper Title",
+      "authors": [],
+      "year": "",
+      "venue": "",
+      "status": "inbox",
+      "topics": [],
+      "pdf": "",
+      "code": "",
+      "tags": [
+        "paper"
+      ],
+      "aliases": [],
+      "related": {
+        "concepts": [],
+        "projects": [],
+        "ideas": [],
+        "experiments": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/paper_note.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "One-line Summary": "",
+        "Problem": "",
+        "Key Idea": "",
+        "Method": "",
+        "Compiler / Architecture Relevance": "",
+        "Claims": "",
+        "Evidence": "",
+        "Limitations": "",
+        "Reproduction Plan": "",
+        "Related Work": "",
+        "Personal Takeaways": "",
+        "Follow-up Ideas": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "project-name",
+      "type": "template",
+      "title": "Project",
+      "status": "active",
+      "repo": "",
+      "stage": "prototype",
+      "tags": [
+        "project"
+      ],
+      "aliases": [],
+      "related": {
+        "ideas": [],
+        "experiments": [],
+        "adr": [],
+        "papers": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/project_note.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Goal": "",
+        "Research Questions": "",
+        "Architecture": "",
+        "Milestones": "",
+        "Current Status": "",
+        "Open Problems": "",
+        "Experiments": "",
+        "Decisions": "",
+        "Roadmap": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "remote-sync-YYYY-NNNN",
+      "type": "template",
+      "title": "Remote Experiment Sync",
+      "status": "planned",
+      "experiment": "",
+      "remote_host": "",
+      "remote_os": "",
+      "remote_project_path": "",
+      "remote_artifact_path": "",
+      "local_experiment_path": "",
+      "sync_method": "git",
+      "tags": [
+        "remote-sync",
+        "experiment"
+      ],
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/remote_experiment_sync.md",
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Purpose": "",
+        "Remote Host": "",
+        "Repositories": "```text\nCompiler Research OS:\nExperiment code:\nLLVM / MLIR:\nTriton:\nArtifacts:\n```",
+        "Before Run Checklist": "- [ ] Pull latest OS repo on remote host\n- [ ] Confirm experiment ID\n- [ ] Confirm code repo commit\n- [ ] Confirm environment\n- [ ] Confirm input shapes\n- [ ] Confirm compiler flags",
+        "Run Commands": "```bash\n\n```",
+        "Artifacts Produced": "",
+        "Sync Commands": "```bash\n\n```",
+        "After Sync Checklist": "- [ ] `metadata.yaml` updated\n- [ ] `env.txt` saved\n- [ ] raw results saved\n- [ ] summary saved\n- [ ] analysis updated\n- [ ] large artifacts referenced by path\n- [ ] next action written"
+      },
+      "checklist": {
+        "total": 13,
+        "done": 0,
+        "ratio": 0,
+        "items": [
+          {
+            "checked": false,
+            "text": "Pull latest OS repo on remote host"
+          },
+          {
+            "checked": false,
+            "text": "Confirm experiment ID"
+          },
+          {
+            "checked": false,
+            "text": "Confirm code repo commit"
+          },
+          {
+            "checked": false,
+            "text": "Confirm environment"
+          },
+          {
+            "checked": false,
+            "text": "Confirm input shapes"
+          },
+          {
+            "checked": false,
+            "text": "Confirm compiler flags"
+          },
+          {
+            "checked": false,
+            "text": "`metadata.yaml` updated"
+          },
+          {
+            "checked": false,
+            "text": "`env.txt` saved"
+          },
+          {
+            "checked": false,
+            "text": "raw results saved"
+          },
+          {
+            "checked": false,
+            "text": "summary saved"
+          },
+          {
+            "checked": false,
+            "text": "analysis updated"
+          },
+          {
+            "checked": false,
+            "text": "large artifacts referenced by path"
+          },
+          {
+            "checked": false,
+            "text": "next action written"
+          }
+        ]
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "idea-YYYY-NNNN",
+      "type": "template",
+      "title": "Research Idea",
+      "status": "seed",
+      "maturity": 1,
+      "topics": [],
+      "tags": [
+        "research-idea"
+      ],
+      "aliases": [],
+      "derived_from": [],
+      "related": {
+        "problems": [],
+        "hypotheses": [],
+        "experiments": [],
+        "projects": [],
+        "papers": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/research_idea.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Observation": "",
+        "Problem": "",
+        "Hypothesis": "",
+        "Why It Matters": "",
+        "Related Work": "",
+        "Possible Approach": "",
+        "Minimal Experiment": "",
+        "Risks": "",
+        "Expected Output": "",
+        "Next Action": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "src-system-topic",
+      "type": "template",
+      "title": "Source Reading",
+      "system": "",
+      "repo": "",
+      "commit": "",
+      "path": "09_templates/source_reading.md",
+      "status": "reading",
+      "tags": [
+        "source-reading"
+      ],
+      "aliases": [],
+      "related": {
+        "concepts": [],
+        "papers": [],
+        "experiments": [],
+        "projects": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Purpose": "",
+        "File Role": "",
+        "Entry Points": "",
+        "Key Classes": "",
+        "Key Functions": "",
+        "Control Flow": "",
+        "Data Flow": "",
+        "Important Invariants": "",
+        "Design Intent": "",
+        "What Surprised Me": "",
+        "Questions": "",
+        "Related Experiments": "",
+        "Summary": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "talk-YYYY-NNNN",
+      "type": "template",
+      "title": "Technical Share",
+      "status": "draft",
+      "audience": "compiler engineers",
+      "duration_min": 30,
+      "tags": [
+        "technical-share"
+      ],
+      "aliases": [],
+      "related": {
+        "source": [],
+        "papers": [],
+        "experiments": [],
+        "concepts": []
+      },
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "path": "09_templates/technical_share.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Audience": "",
+        "Main Message": "",
+        "Outline": "",
+        "Key Examples": "",
+        "Diagrams": "",
+        "Demo": "",
+        "Takeaways": "",
+        "References": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "weekly-YYYY-WNN",
+      "type": "template",
+      "week": "YYYY-WNN",
+      "status": "draft",
+      "focus": [],
+      "tags": [
+        "weekly-report"
+      ],
+      "aliases": [],
+      "related": [],
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "title": "Weekly Report YYYY-WNN",
+      "path": "09_templates/weekly_report.md",
+      "wikilinks": [],
+      "summary": "",
+      "sections": {
+        "Summary": "",
+        "Completed": "",
+        "Papers Read": "",
+        "Source Reading": "",
+        "Experiments": "",
+        "Ideas": "",
+        "Problems": "",
+        "Decisions": "",
+        "Risks": "",
+        "Next Week Plan": ""
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": true,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "10-knowledge-readme",
+      "title": "Knowledge",
+      "type": "knowledge_node",
+      "status": "",
+      "path": "10_knowledge/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Durable compiler knowledge: concepts, systems, problems, principles, maps, and your evolving compiler world model.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "concept-compiler-pass",
+      "type": "knowledge_node",
+      "node_type": "concept",
+      "title": "Compiler Pass",
+      "status": "evergreen",
+      "tags": [
+        "knowledge",
+        "compiler",
+        "pass"
+      ],
+      "aliases": [
+        "编译器 Pass"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "MLIR Pass Pipeline"
+            ]
+          ]
+        ],
+        "depends_on": [
+          [
+            [
+              "IR Transformation"
+            ]
+          ]
+        ],
+        "supports": [
+          [
+            [
+              "MLIR Pass Pipeline Mental Model"
+            ]
+          ]
+        ],
+        "contradicts": [],
+        "used_by": [
+          [
+            [
+              "MLIR Pass Infrastructure First Reading"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "10_knowledge/concepts/concept-compiler-pass.md",
+      "wikilinks": [
+        "MLIR Pass Pipeline",
+        "IR Transformation",
+        "MLIR Pass Pipeline Mental Model",
+        "MLIR Pass Infrastructure First Reading"
+      ],
+      "summary": "Compiler pass 是编译器中对 IR 执行 analysis 或 transformation 的基本单元。",
+      "sections": {
+        "Definition": "Compiler pass 是编译器中对 IR 执行 analysis 或 transformation 的基本单元。\n\nA compiler pass is a unit that performs analysis or transformation over an intermediate representation.",
+        "Mental Model": "把 pass 看成一个带约束的 IR 函数：\n\n```text\nIR_before + analysis + options -> IR_after + preserved/invalidated analyses\n```",
+        "Why It Matters": "Scheduler、memory planner、lowering、canonicalization 通常都以 pass 或 pass pipeline 的形式进入编译器。",
+        "Compiler Relevance": "- Pass boundary 决定 transformation 的职责边界。\n- Pass invariant 决定 correctness。\n- Pass pipeline 决定 optimization ordering。",
+        "Key Tradeoffs": "- 单个 pass 简单 vs pipeline 复杂。\n- pass 粒度细方便组合，但调试成本更高。\n- pass 粒度粗方便优化全局上下文，但复用性差。",
+        "Examples": "- Canonicalization pass\n- Dialect conversion pass\n- CSE pass\n- Lowering pass",
+        "Related Concepts": "- [[MLIR Pass Pipeline]]\n- [[IR Transformation]]",
+        "Open Questions": "- 一个 scheduler 应该作为独立 pass，还是嵌入 lowering pipeline？\n- memory planner 应该依赖哪个 IR 层级的信息？",
+        "References": "- [[MLIR Pass Infrastructure First Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 11,
+      "outgoing": 8
+    },
+    {
+      "id": "concept-gpu-occupancy",
+      "type": "knowledge_node",
+      "node_type": "concept",
+      "title": "GPU Occupancy",
+      "status": "evergreen",
+      "tags": [
+        "knowledge",
+        "gpu",
+        "performance"
+      ],
+      "aliases": [
+        "Occupancy",
+        "GPU 占用率"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "Memory Hierarchy"
+            ]
+          ]
+        ],
+        "depends_on": [],
+        "supports": [
+          [
+            [
+              "Triton Compiler Architecture Reading"
+            ]
+          ]
+        ],
+        "contradicts": [],
+        "used_by": []
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "10_knowledge/concepts/concept-gpu-occupancy.md",
+      "wikilinks": [
+        "Memory Hierarchy",
+        "Triton Compiler Architecture Reading",
+        "Triton Compilation Pipeline"
+      ],
+      "summary": "GPU occupancy 通常指一个 SM 上活跃 warps 与硬件最大可活跃 warps 的比例。",
+      "sections": {
+        "Definition": "GPU occupancy 通常指一个 SM 上活跃 warps 与硬件最大可活跃 warps 的比例。\n\nGPU occupancy usually refers to the ratio of active warps on an SM to the hardware maximum number of active warps.",
+        "Mental Model": "Occupancy 是隐藏 latency 的资源条件之一，但不是性能的唯一目标。\n\nOccupancy helps hide latency, but higher occupancy does not automatically mean better performance.",
+        "Why It Matters": "Scheduler 和 memory planner 的选择会影响 register usage、shared memory usage 和 active warps，从而影响 occupancy。",
+        "Compiler Relevance": "- tile size 影响 register pressure。\n- shared memory allocation 影响 blocks per SM。\n- pipeline stages 影响 latency hiding 和 resource usage。",
+        "Key Tradeoffs": "- 更大 tile 可能提高 arithmetic intensity，但降低 occupancy。\n- 更多 pipeline stages 可能提高吞吐，但增加 register/shared memory 压力。\n- 高 occupancy 可能掩盖 memory latency，但不解决 bandwidth bottleneck。",
+        "Examples": "- Triton `num_warps`\n- Triton `num_stages`\n- CUDA block size",
+        "Related Concepts": "- [[Memory Hierarchy]]\n- [[Triton Compilation Pipeline]]",
+        "Open Questions": "- RTX4060 上哪些 Triton matmul config 最容易受 occupancy 限制？\n- 对 scheduler prototype 来说，occupancy 应该作为 hard constraint 还是 cost feature？",
+        "References": "- [[Triton Compiler Architecture Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 7,
+      "outgoing": 5
+    },
+    {
+      "id": "concept-ir-transformation",
+      "type": "knowledge_node",
+      "node_type": "concept",
+      "title": "IR Transformation",
+      "status": "evergreen",
+      "tags": [
+        "knowledge",
+        "compiler",
+        "ir"
+      ],
+      "aliases": [
+        "IR 变换"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "Compiler Pass"
+            ]
+          ],
+          [
+            [
+              "MLIR Pass Pipeline"
+            ]
+          ]
+        ],
+        "depends_on": [],
+        "supports": [
+          [
+            [
+              "MLIR Pass Pipeline Mental Model"
+            ]
+          ]
+        ],
+        "contradicts": [],
+        "used_by": [
+          [
+            [
+              "MLIR Pass Infrastructure First Reading"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "10_knowledge/concepts/concept-ir-transformation.md",
+      "wikilinks": [
+        "Compiler Pass",
+        "MLIR Pass Pipeline",
+        "MLIR Pass Pipeline Mental Model",
+        "MLIR Pass Infrastructure First Reading"
+      ],
+      "summary": "IR transformation 是在保持语义或按目标语义转换的前提下，对中间表示进行结构变化的过程。",
+      "sections": {
+        "Definition": "IR transformation 是在保持语义或按目标语义转换的前提下，对中间表示进行结构变化的过程。\n\nIR transformation changes the structure of an intermediate representation while preserving semantics or lowering it toward target semantics.",
+        "Mental Model": "```text\nsemantic intent\n-> IR pattern\n-> rewrite rule\n-> legality check\n-> transformed IR\n```",
+        "Why It Matters": "Compiler 的核心工作不是“生成代码”这么简单，而是在多个 IR 层级之间不断重写、降低和优化。",
+        "Compiler Relevance": "- Scheduler transformation 可能改变 execution order。\n- Memory transformation 可能改变 allocation、layout 或 reuse。\n- Lowering transformation 改变 abstraction level。",
+        "Key Tradeoffs": "- 保留高层语义 vs 暴露底层优化机会。\n- 局部 rewrite 简单 vs 全局 optimization 更强。\n- transformation correctness 往往比 performance 更难保证。",
+        "Examples": "- loop tiling\n- operation fusion\n- bufferization\n- dialect conversion\n- layout rewrite",
+        "Related Concepts": "- [[Compiler Pass]]\n- [[MLIR Pass Pipeline]]",
+        "Open Questions": "- 如何为一个 transformation 写最小但有效的测试？\n- 哪些 transformation 应该保留 source-level debug 信息？",
+        "References": "- [[MLIR Pass Infrastructure First Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 10,
+      "outgoing": 8
+    },
+    {
+      "id": "concept-memory-hierarchy",
+      "type": "knowledge_node",
+      "node_type": "concept",
+      "title": "Memory Hierarchy",
+      "status": "evergreen",
+      "tags": [
+        "knowledge",
+        "gpu",
+        "memory"
+      ],
+      "aliases": [
+        "存储层次",
+        "GPU Memory Hierarchy"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "GPU Occupancy"
+            ]
+          ]
+        ],
+        "depends_on": [],
+        "supports": [
+          [
+            [
+              "Triton Compiler Architecture Reading"
+            ]
+          ]
+        ],
+        "contradicts": [],
+        "used_by": []
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "10_knowledge/concepts/concept-memory-hierarchy.md",
+      "wikilinks": [
+        "GPU Occupancy",
+        "Triton Compiler Architecture Reading",
+        "Triton Compilation Pipeline"
+      ],
+      "summary": "Memory hierarchy 是 GPU 中不同存储层级的组合，包括 global memory、L2/cache、shared memory、register 等。",
+      "sections": {
+        "Definition": "Memory hierarchy 是 GPU 中不同存储层级的组合，包括 global memory、L2/cache、shared memory、register 等。\n\nMemory hierarchy is the organization of different GPU memory levels, including global memory, caches, shared memory, and registers.",
+        "Mental Model": "编译器优化经常是在“把数据放到哪个层级、什么时候搬运、复用多少次”之间做权衡。\n\nCompiler memory optimization often asks: where should data live, when should it move, and how many times can it be reused?",
+        "Why It Matters": "GPU kernel 性能常常受 memory bandwidth、memory latency、coalescing、shared memory bank conflict 和 register pressure 影响。",
+        "Compiler Relevance": "- Scheduler 决定数据复用窗口。\n- Memory planner 决定 buffer lifetime 和 allocation。\n- Layout 决定访问模式。\n- Lowering 决定最终 memory instruction。",
+        "Key Tradeoffs": "- shared memory 复用 vs shared memory 容量。\n- register reuse vs register pressure。\n- coalesced global load vs layout transformation cost。",
+        "Examples": "- matmul tiling\n- attention block scheduling\n- shared memory staging",
+        "Related Concepts": "- [[GPU Occupancy]]\n- [[Triton Compilation Pipeline]]",
+        "Open Questions": "- 在 RTX4060 上，哪些 memory 指标最值得作为第一阶段 profiler target？\n- memory planner prototype 应该先建模 shared memory 还是 register pressure？",
+        "References": "- [[Triton Compiler Architecture Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 7,
+      "outgoing": 5
+    },
+    {
+      "id": "concept-mlir-pass-pipeline",
+      "type": "knowledge_node",
+      "node_type": "concept",
+      "title": "MLIR Pass Pipeline",
+      "status": "evergreen",
+      "tags": [
+        "knowledge",
+        "mlir",
+        "pass-pipeline"
+      ],
+      "aliases": [
+        "MLIR Pass Pipeline",
+        "MLIR Pass 流水线"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "Compiler Pass"
+            ]
+          ],
+          [
+            [
+              "IR Transformation"
+            ]
+          ]
+        ],
+        "depends_on": [
+          [
+            [
+              "Compiler Pass"
+            ]
+          ]
+        ],
+        "supports": [
+          [
+            [
+              "MLIR Pass Pipeline Mental Model"
+            ]
+          ]
+        ],
+        "contradicts": [],
+        "used_by": [
+          [
+            [
+              "MLIR Pass Infrastructure First Reading"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "10_knowledge/concepts/concept-mlir-pass-pipeline.md",
+      "wikilinks": [
+        "Compiler Pass",
+        "IR Transformation",
+        "MLIR Pass Pipeline Mental Model",
+        "MLIR Pass Infrastructure First Reading"
+      ],
+      "summary": "MLIR pass pipeline 是一组按顺序或嵌套结构组织的 passes，用于逐步分析、规范化、转换和降低 IR。",
+      "sections": {
+        "Definition": "MLIR pass pipeline 是一组按顺序或嵌套结构组织的 passes，用于逐步分析、规范化、转换和降低 IR。\n\nAn MLIR pass pipeline is an ordered or nested composition of passes that analyze, canonicalize, transform, and lower IR.",
+        "Mental Model": "```text\nhigh-level IR\n-> canonicalization\n-> analysis\n-> dialect conversion\n-> optimization\n-> lowering\n-> target-specific IR/code\n```",
+        "Why It Matters": "理解 pass pipeline 是理解 compiler architecture 的入口。很多性能和正确性问题不是单个 pass 的问题，而是 pipeline ordering 和 abstraction boundary 的问题。",
+        "Compiler Relevance": "- Dialect 设计必须考虑 lowering pipeline。\n- Scheduler 必须知道它能看到哪些 IR 信息。\n- Memory planner 必须知道 buffer lifetime 在哪个 IR 层级最清晰。",
+        "Key Tradeoffs": "- 早优化可能丢失高层语义。\n- 晚优化可能错过低成本 transformation。\n- pipeline 越灵活，debug 和 reproducibility 越重要。",
+        "Examples": "待源码阅读和实验补充。",
+        "Related Concepts": "- [[Compiler Pass]]\n- [[IR Transformation]]",
+        "Open Questions": "- MLIR nested pass manager 如何影响 pipeline mental model？\n- pass failure 和 verifier 在 pipeline 中如何交互？",
+        "References": "- [[MLIR Pass Infrastructure First Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 11,
+      "outgoing": 9
+    },
+    {
+      "id": "concept-triton-compilation-pipeline",
+      "type": "knowledge_node",
+      "node_type": "concept",
+      "title": "Triton Compilation Pipeline",
+      "status": "evergreen",
+      "tags": [
+        "knowledge",
+        "triton",
+        "gpu-compiler"
+      ],
+      "aliases": [
+        "Triton 编译流水线"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "MLIR Pass Pipeline"
+            ]
+          ],
+          [
+            [
+              "Memory Hierarchy"
+            ]
+          ],
+          [
+            [
+              "GPU Occupancy"
+            ]
+          ]
+        ],
+        "depends_on": [
+          [
+            [
+              "Compiler Pass"
+            ]
+          ],
+          [
+            [
+              "IR Transformation"
+            ]
+          ]
+        ],
+        "supports": [
+          [
+            [
+              "Triton Compiler Architecture Reading"
+            ]
+          ]
+        ],
+        "contradicts": [],
+        "used_by": []
+      },
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "10_knowledge/concepts/concept-triton-compilation-pipeline.md",
+      "wikilinks": [
+        "MLIR Pass Pipeline",
+        "Memory Hierarchy",
+        "GPU Occupancy",
+        "Compiler Pass",
+        "IR Transformation",
+        "Triton Compiler Architecture Reading"
+      ],
+      "summary": "Triton compilation pipeline 是 Triton 将 Python DSL 表达的 tensor program 转换为 GPU 可执行代码的编译路径。",
+      "sections": {
+        "Definition": "Triton compilation pipeline 是 Triton 将 Python DSL 表达的 tensor program 转换为 GPU 可执行代码的编译路径。\n\nThe Triton compilation pipeline transforms tensor programs written in the Triton Python DSL into executable GPU code.",
+        "Mental Model": "初始心智模型，待源码和实验验证：\n\n```text\nPython DSL\n-> Triton IR\n-> optimization / layout / scheduling related passes\n-> LLVM-related lowering\n-> PTX / binary\n```",
+        "Why It Matters": "Triton 是研究 AI compiler architecture 的高价值样本，因为它把用户可控 schedule meta-parameters 和 compiler internal lowering 连接在一起。",
+        "Compiler Relevance": "- Scheduler design 可以从 Triton meta-parameters 和 pass pipeline 中获得启发。\n- Memory planner design 可以观察 Triton 如何表达 block-level memory behavior。\n- Experiment system 可以用 Triton benchmark 作为第一批可执行实验。",
+        "Key Tradeoffs": "- DSL 简洁性 vs schedule 表达能力。\n- 用户显式 meta-parameter vs compiler 自动优化。\n- target-specific optimization vs architecture portability。",
+        "Examples": "- matmul kernel\n- fused elementwise kernel\n- attention microkernel",
+        "Related Concepts": "- [[MLIR Pass Pipeline]]\n- [[GPU Occupancy]]\n- [[Memory Hierarchy]]",
+        "Open Questions": "- Triton 中哪些 pass 对 scheduler / memory planner 最关键？\n- 哪些 optimization 是用户参数控制，哪些是 compiler 自动完成？",
+        "References": "- [[Triton Compiler Architecture Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 5,
+      "outgoing": 12
+    },
+    {
+      "id": "problem-understanding-compiler-transformation-pipelines",
+      "type": "knowledge_node",
+      "node_type": "problem",
+      "title": "Understanding Compiler Transformation Pipelines",
+      "status": "active",
+      "tags": [
+        "knowledge",
+        "problem",
+        "compiler-architecture",
+        "mlir"
+      ],
+      "aliases": [
+        "Understanding Compiler Transformation Pipelines",
+        "理解编译器变换流水线"
+      ],
+      "related": {
+        "related_to": [
+          [
+            [
+              "MLIR Pass Pipeline"
+            ]
+          ],
+          [
+            [
+              "Compiler Pass"
+            ]
+          ],
+          [
+            [
+              "IR Transformation"
+            ]
+          ]
+        ],
+        "supports": [
+          [
+            [
+              "MLIR Pass Pipeline Mental Model"
+            ]
+          ]
+        ]
+      },
+      "created": "2026-06-23",
+      "updated": "2026-06-23",
+      "path": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md",
+      "wikilinks": [
+        "MLIR Pass Pipeline",
+        "Compiler Pass",
+        "IR Transformation",
+        "MLIR Pass Pipeline Mental Model",
+        "MLIR Pass Infrastructure First Reading",
+        "Triton Compiler Architecture Reading"
+      ],
+      "summary": "理解编译器变换流水线，指的是能解释一个程序表示如何经过多个 analysis、rewrite、conversion、lowering 和 codegen 阶段逐步变成目标代码。",
+      "sections": {
+        "Definition": "理解编译器变换流水线，指的是能解释一个程序表示如何经过多个 analysis、rewrite、conversion、lowering 和 codegen 阶段逐步变成目标代码。\n\nUnderstanding compiler transformation pipelines means being able to explain how a program representation moves through analysis, rewriting, conversion, lowering, and code generation stages.",
+        "Why It Matters": "Scheduler、memory planner、dialect design 和 codegen 都不是孤立模块。它们的有效性取决于所在 IR 层级、pipeline 顺序、可见信息和必须维护的 invariants。",
+        "Compiler Relevance": "- Pass ordering affects correctness and optimization opportunity.\n- IR abstraction level determines what information a pass can use.\n- Lowering boundaries decide where scheduler and memory planner decisions should live.\n- Failed transformations are often architecture boundary problems, not just local bugs.",
+        "Open Questions": "- MLIR nested pass pipeline 的最小阅读路径是什么？\n- Scheduler 应该在哪个 IR 层级做决策？\n- Memory planner 应该依赖 high-level tensor semantics 还是 low-level buffer information？",
+        "Related Notes": "- [[MLIR Pass Pipeline Mental Model]]\n- [[MLIR Pass Infrastructure First Reading]]\n- [[Triton Compiler Architecture Reading]]"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 2,
+      "outgoing": 10
+    },
+    {
+      "id": "11-agents-readme",
+      "title": "Agents",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Prompt library, task records, outputs, logs, and guardrails for AI-assisted work inside Compiler Research OS.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-guardrails-readme",
+      "title": "Agent Guardrails",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/guardrails/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "- Do not invent papers, benchmark numbers, commits, or source behavior. - Separate facts, inferences, hypotheses, and recommendations. - Prefer local notes and source files over memory. - Preserve YAML frontmatter unless explicitly changing the data model. - Link claims to evidence using wikilinks. - Mark uncertainty w",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-architect-reviewer-agent",
+      "title": "Architect Reviewer Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/architect_reviewer_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Compiler Architect Reviewer.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-experiment-agent",
+      "title": "Experiment Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/experiment_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Compiler Research OS Experiment Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-knowledge-agent",
+      "title": "Knowledge Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/knowledge_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Compiler Research OS Knowledge Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-mentor-agent",
+      "title": "Mentor Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/mentor_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my AI-native compiler engineering mentor.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-paper-agent",
+      "title": "Paper Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/paper_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Compiler Paper Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-research-agent",
+      "title": "Research Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/research_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Compiler Research OS Research Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-roadmap-agent",
+      "title": "Roadmap Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/roadmap_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Compiler Research OS Roadmap Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-source-reading-agent",
+      "title": "Source Reading Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/source_reading_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Source Reading Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "11-agents-prompts-weekly-review-agent",
+      "title": "Weekly Review Agent Prompt",
+      "type": "note",
+      "status": "",
+      "path": "11_agents/prompts/weekly_review_agent.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "You are my Weekly Review Agent.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "12-roadmap-readme",
+      "title": "Roadmap",
+      "type": "roadmap",
+      "status": "",
+      "path": "12_roadmap/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Yearly, quarterly, and monthly plans for becoming a compiler architect and researcher.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "skill-tree",
+      "type": "roadmap",
+      "title": "Compiler Architect Skill Tree",
+      "status": "active",
+      "tags": [
+        "roadmap",
+        "skill-tree"
+      ],
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "path": "12_roadmap/skill_tree.md",
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "这棵技能树不是 checklist，而是你的 Compiler Architect 成长地图。每个节点都应该逐渐连接到 paper note、source reading note、experiment record 和 architecture decision。",
+      "sections": {
+        "Current Quarter Focus": "- MLIR Pass Infrastructure / MLIR Pass 基础设施\n- Triton Compilation Pipeline / Triton 编译流水线\n- GPU Performance Mental Model / GPU 性能心智模型\n- Reproducible Experiment Workflow / 可复现实验流程",
+        "Compiler Foundations": "- LLVM IR / LLVM 中间表示\n- MLIR infrastructure / MLIR 基础设施\n- Pass design / Pass 设计\n- Dataflow analysis / 数据流分析\n- Lowering pipelines / 降级流水线\n- Code generation / 代码生成\n\n### First Milestones\n\n- 能解释 operation、region、block、value 的关系。\n- 能说明一个 MLIR pass 如何注册、运行和修改 IR。\n- 能读懂一个 before/after IR transformation。\n- 能判断一个 pass 的 correctness invariant。",
+        "GPU Architecture": "- SIMT execution / SIMT 执行模型\n- Warp scheduling / Warp 调度\n- Memory hierarchy / 存储层次\n- Occupancy / 占用率\n- Register pressure / 寄存器压力\n- Shared memory / 共享内存\n- Tensor cores / Tensor Core\n\n### First Milestones\n\n- 能解释 occupancy、register pressure、shared memory 三者的 tradeoff。\n- 能从 profiler 指标推断一个 kernel 的主要瓶颈。\n- 能把 GPU 资源约束映射回 compiler scheduling decision。",
+        "AI Compiler": "- Triton\n- TensorRT\n- TVM\n- TileLang\n- vLLM\n- SGLang\n\n### First Milestones\n\n- 能画出 Triton 从 Python DSL 到 LLVM/PTX 的粗粒度路径。\n- 能说明 TensorRT、TVM、Triton 的定位差异。\n- 能识别 vLLM/SGLang 中 compiler/runtime 边界。",
+        "Scheduler Optimization": "- Search spaces / 搜索空间\n- Cost models / 代价模型\n- Pipeline scheduling / 流水调度\n- Tiling / 分块\n- Fusion / 融合\n- Resource constraints / 资源约束\n\n### First Milestones\n\n- 定义一个最小 scheduling unit。\n- 写出一个 baseline cost model。\n- 用一个实验比较两种 tile/schedule 配置。",
+        "Memory Optimization": "- Buffer lifetime / Buffer 生命周期\n- Memory planning / 内存规划\n- Layout / 数据布局\n- Reuse / 复用\n- Shared memory allocation / 共享内存分配\n- Bandwidth modeling / 带宽建模\n\n### First Milestones\n\n- 能从 IR 或 schedule 中提取 tensor lifetime。\n- 能解释 buffer reuse 的 correctness condition。\n- 能设计一个小型 shared memory planning 实验。",
+        "Research Capability": "- Paper reading / 论文阅读\n- Related work synthesis / 相关工作综合\n- Hypothesis design / 假设设计\n- Reproducible experiment / 可复现实验\n- Artifact building / Artifact 构建\n- Technical writing / 技术写作\n\n### First Milestones\n\n- 每篇论文输出 problem、method、evidence、limitation、reproduction plan。\n- 每个 idea 都能追踪 derived_from、tested_by、supports 或 invalidates。\n- 每个实验都保留 metadata、env、command、raw result、analysis。"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": false,
+      "incoming": 2,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-readme",
+      "title": "Skills",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Personal skills for Compiler Research OS.",
+      "sections": {},
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "name": "compiler-research-os-workflow",
+      "description": "Use this skill when managing Compiler Research OS workflows across remote Linux experiments, paper reading, source reading, research ideas, architecture notes, personal reflections, weekly/monthly reviews, and data synchronization into the local Markdown/Git/Obsidian OS.",
+      "id": "compiler-research-os-workflow",
+      "title": "Compiler Research OS Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/SKILL.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this skill to operate the user's Compiler Research OS as a research system, not a passive note collection.",
+      "sections": {
+        "Core Rule": "Every meaningful item should connect to at least one of:\n\n- `Problem`\n- `Hypothesis`\n- `Experiment`\n- `Source Reading`\n- `Paper`\n- `Architecture Decision`\n- `Knowledge Node`\n- `Output`\n\nIf a note has no connection, either link it, triage it, or leave it in `00_inbox/`.",
+        "Default Operating Loop": "```text\nPlan locally\n-> Run or read deeply\n-> Capture evidence\n-> Sync artifacts\n-> Analyze\n-> Extract durable knowledge\n-> Decide next action\n```",
+        "When Starting Work": "1. Read today's daily log in `01_daily/YYYY/`.\n2. Identify the active focus from `12_roadmap/skill_tree.md` and current weekly/monthly notes.\n3. Pick one track only: paper, source reading, experiment, architecture, or reflection.\n4. Update the relevant note before doing broad exploration.",
+        "Workflow References": "Read only the reference needed for the task:\n\n- Remote Linux experiments and artifact sync: `references/remote-experiment-sync.md`\n- Experiment design and execution: `references/experiment-workflow.md`\n- Paper reading and literature workflow: `references/paper-reading-workflow.md`\n- Research idea pipeline: `references/research-idea-workflow.md`\n- Architecture research and ADR workflow: `references/architecture-workflow.md`\n- Personal thinking, reflection, and review workflow: `references/reflection-review-workflow.md`",
+        "File Placement": "- Daily work: `01_daily/YYYY/`\n- Papers: `02_papers/`\n- Source reading: `03_source_reading/`\n- Research ideas: `04_research/ideas/`\n- Experiments: `05_experiments/`\n- Project links: `06_projects/`\n- Architecture decisions: `07_architecture/`\n- Outputs: `08_outputs/`\n- Templates: `09_templates/`\n- Durable knowledge: `10_knowledge/`\n- Agent prompts: `11_agents/`\n- Roadmap: `12_roadmap/`\n- Skills: `13_skills/`",
+        "Synchronization Policy": "The OS is the source of truth for research evidence and reasoning, not necessarily for all raw artifacts.\n\nCommit to Git:\n\n- Markdown notes\n- YAML metadata\n- small CSV results\n- command logs\n- environment summaries\n- compact IR/PTX snippets\n- analysis and conclusions\n\nDo not commit by default:\n\n- large profiler reports\n- build directories\n- binaries\n- model weights\n- conda/venv environments\n- long raw traces\n\nRecord large artifact paths in metadata instead.",
+        "AI Behavior": "When using this skill:\n\n- Prefer updating existing notes over creating duplicates.\n- Preserve YAML frontmatter and wikilinks.\n- Mark uncertainty explicitly.\n- Never invent benchmark results, paper claims, source behavior, commits, or profiler data.\n- Separate facts, hypotheses, interpretations, and decisions.\n- Keep bilingual output when useful: Chinese first, English for key terms and summaries."
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 2,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-compiler-research-os-workflow-references-architecture-workflow",
+      "title": "Architecture Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/references/architecture-workflow.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this for architecture design, ADRs, compiler design proposals, and reviews.",
+      "sections": {
+        "Purpose": "Use this for architecture design, ADRs, compiler design proposals, and reviews.",
+        "Architecture Objects": "- ADR: concrete decision with context and consequences\n- Proposal: larger design still under exploration\n- Review: critique of an existing design\n- Principle: durable design judgment",
+        "Design Flow": "```text\nContext\n-> Requirements\n-> Constraints\n-> Alternatives\n-> Decision\n-> Consequences\n-> Validation\n-> Revisit Condition\n```",
+        "Compiler Architecture Review Checklist": "Check:\n\n- abstraction boundary\n- IR ownership\n- transformation invariants\n- analysis dependencies\n- pass ordering\n- target assumptions\n- memory model\n- scheduler interface\n- test strategy\n- failure modes\n- performance risks",
+        "ADR Completion Standard": "An ADR is complete when:\n\n- decision is explicit\n- alternatives are documented\n- consequences are honest\n- validation plan exists\n- revisit condition is written",
+        "Output Links": "Architecture notes should link to:\n\n- project notes\n- experiments\n- source reading\n- research ideas\n- knowledge nodes"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-compiler-research-os-workflow-references-experiment-workflow",
+      "title": "Experiment Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/references/experiment-workflow.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this for designing, running, recording, and analyzing compiler experiments.",
+      "sections": {
+        "Purpose": "Use this for designing, running, recording, and analyzing compiler experiments.",
+        "Experiment Lifecycle": "```text\nQuestion\n-> Hypothesis\n-> Baseline\n-> Variables\n-> Metrics\n-> Run Plan\n-> Execution\n-> Raw Results\n-> Analysis\n-> Conclusion\n-> Next Experiment\n```",
+        "Design Rules": "- Start from a testable hypothesis.\n- Change one major variable at a time when possible.\n- Always define baseline before optimization.\n- Record failure as data.\n- Do not create performance claims from incomplete runs.",
+        "Required Files": "```text\n05_experiments/active/exp-YYYY-NNNN-name/\n├── metadata.yaml\n├── README.md\n├── run.sh\n├── env.txt\n├── commands.sh\n├── inputs/\n├── configs/\n├── dumps/\n├── profiles/\n├── results/\n└── analysis.md\n```",
+        "Required Metadata": "- experiment ID\n- title\n- status\n- related idea / hypothesis / paper\n- project repo\n- git commit\n- dirty state\n- OS\n- Python\n- CUDA\n- driver\n- GPU\n- compiler versions\n- input shapes\n- compiler flags\n- metrics\n- artifact paths",
+        "Analysis Discipline": "Use this separation:\n\n```text\nFacts: measured numbers, exact commands, environment\nInterpretation: plausible explanations\nHypotheses: claims needing more experiments\nDecision: what to do next\n```\n\nNever let interpretation masquerade as fact. Tiny dragon, big fire. Keep it leashed.",
+        "Completion Standard": "An experiment is complete only when:\n\n- raw results exist\n- metadata is filled\n- environment is recorded\n- commands are reproducible\n- analysis states whether the hypothesis is supported\n- next action is explicit"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-compiler-research-os-workflow-references-paper-reading-workflow",
+      "title": "Paper Reading Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/references/paper-reading-workflow.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this for reading compiler, GPU, architecture, and AI systems papers.",
+      "sections": {
+        "Purpose": "Use this for reading compiler, GPU, architecture, and AI systems papers.",
+        "Reading Levels": "```text\nSkim: title, abstract, figures, claims, limitations\nNormal: problem, method, evidence, related work\nDeep: reproduce core claim, map to source/experiment/architecture\n```",
+        "Required Output": "Every serious paper note should include:\n\n- one-line summary\n- problem\n- key idea\n- method\n- evidence\n- assumptions\n- limitations\n- compiler architecture relevance\n- reproduction plan\n- follow-up ideas",
+        "Compiler-Specific Questions": "Ask:\n\n- What IR abstraction does this assume?\n- What hardware model does it use?\n- What scheduling or memory decision is central?\n- What is measured, and what is not measured?\n- Which claim can I reproduce locally?\n- Which part could become a prototype?",
+        "Link Targets": "Connect paper notes to:\n\n- concepts in `10_knowledge/concepts/`\n- experiments in `05_experiments/`\n- ideas in `04_research/ideas/`\n- source reading in `03_source_reading/`\n- outputs in `08_outputs/`",
+        "Completion Standard": "A paper is not “read” until it has:\n\n- limitation section\n- reproduction plan\n- at least one related concept or research idea"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-compiler-research-os-workflow-references-reflection-review-workflow",
+      "title": "Reflection and Review Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/references/reflection-review-workflow.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this for personal thinking, technical reflection, weekly reports, monthly reviews, and long-horizon growth as a compiler architect.",
+      "sections": {
+        "Purpose": "Use this for personal thinking, technical reflection, weekly reports, monthly reviews, and long-horizon growth as a compiler architect.",
+        "Daily Reflection": "Use daily logs for:\n\n- what I worked on\n- what I learned\n- what confused me\n- what I decided\n- what evidence I collected\n- what should happen next\n\nDo not polish daily logs too much. They are working memory.",
+        "Weekly Review": "Weekly report should include:\n\n- completed work\n- papers read\n- source reading progress\n- experiments\n- research ideas\n- decisions\n- blockers\n- next week focus\n\nPick one deep focus. The system gets sharper by refusing six shiny paths.",
+        "Monthly Review": "Monthly review should answer:\n\n- Am I closer to Compiler Architect level?\n- Which skill improved?\n- Which idea matured?\n- Which experiment changed my mind?\n- Which work should stop?\n- What should next month optimize for?",
+        "Personal Reflections": "Personal thoughts belong in the OS when they affect research direction, motivation, taste, judgment, or architecture principles.\n\nGood reflection topics:\n\n- why a topic feels important\n- what kind of compiler architect I want to become\n- what tradeoff I repeatedly misunderstand\n- what kind of evidence changes my mind\n- what research taste I am developing",
+        "Durable Extraction": "After reflection, extract:\n\n- principles into `10_knowledge/principles/`\n- roadmap changes into `12_roadmap/`\n- architecture decisions into `07_architecture/adr/`\n- research ideas into `04_research/ideas/`"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-compiler-research-os-workflow-references-remote-experiment-sync",
+      "title": "Remote Experiment Sync Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/references/remote-experiment-sync.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this when experiments run on another Linux host but results must be synchronized into Compiler Research OS.",
+      "sections": {
+        "Purpose": "Use this when experiments run on another Linux host but results must be synchronized into Compiler Research OS.\n\nCore pattern:\n\n```text\nMac / local OS: plan, organize, analyze, write\nLinux host: build, run, profile, export artifacts\nGit / rsync: sync evidence back\n```",
+        "Recommended Host Layout": "On Linux:\n\n```text\n~/work/Compiler-Research-OS       # Markdown OS clone\n~/work/compiler-experiments       # runnable experiment code\n~/work/llvm-project               # LLVM / MLIR source and build\n~/work/triton                     # Triton source and environment\n~/work/artifacts                  # large non-git artifacts\n```\n\nOn local machine:\n\n```text\nCompiler-Research-OS              # Obsidian + writing + analysis\n```",
+        "Preferred Sync Mode: Git": "Use Git for small and meaningful research artifacts:\n\n```bash\ncd ~/work/Compiler-Research-OS\ngit pull\n# update 05_experiments/... from the Linux run\ngit add 05_experiments 03_source_reading 04_research 10_knowledge\ngit commit -m \"Add experiment result: exp-YYYY-NNNN\"\ngit push\n```\n\nLocal machine:\n\n```bash\ngit pull\n```",
+        "Fast Pull Mode: rsync": "Use `rsync` when the Linux host has results but should not commit:\n\n```bash\nrsync -avz \\\n  user@linux-host:~/work/Compiler-Research-OS/05_experiments/active/exp-YYYY-NNNN-name/ \\\n  ./05_experiments/active/exp-YYYY-NNNN-name/\n```",
+        "Artifact Policy": "Put into Git:\n\n- `metadata.yaml`\n- `README.md`\n- `analysis.md`\n- `results/summary.md`\n- small `results/raw.csv`\n- `env.txt`\n- `commands.sh`\n- small IR/PTX snippets\n\nKeep remote and reference by path:\n\n- large Nsight reports\n- full traces\n- binaries\n- cubin archives\n- build trees\n- model weights\n- large logs\n\nMetadata example:\n\n```yaml\nartifacts:\n  remote_host: linux-gpu-01\n  remote_project_path: ~/work/compiler-experiments\n  remote_artifact_path: ~/work/artifacts/exp-2026-0002\n  raw_csv: results/raw.csv\n  summary: results/summary.md\n  nsight_report: remote:~/work/artifacts/exp-2026-0002/profile.nsys-rep\n```",
+        "Remote Run Checklist": "Before running:\n\n- Pull latest OS repo.\n- Confirm experiment ID.\n- Confirm code repo and commit.\n- Confirm environment path.\n- Record expected shapes and flags.\n\nAfter running:\n\n- Save raw result.\n- Save environment.\n- Save exact command.\n- Save summary.\n- Update analysis with facts only.\n- Sync or commit results."
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "13-skills-compiler-research-os-workflow-references-research-idea-workflow",
+      "title": "Research Idea Workflow",
+      "type": "skill",
+      "status": "",
+      "path": "13_skills/compiler-research-os-workflow/references/research-idea-workflow.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Use this for managing ideas from raw observation to paper or artifact.",
+      "sections": {
+        "Purpose": "Use this for managing ideas from raw observation to paper or artifact.",
+        "Pipeline": "```text\nObservation\n-> Problem\n-> Hypothesis\n-> Related Work\n-> Experiment Design\n-> Prototype\n-> Result\n-> Analysis\n-> Limitation\n-> Paper Claim\n-> Paper Draft\n-> Artifact\n-> Open Source\n```",
+        "Maturity Scale": "```text\n0 = raw note\n1 = seed idea\n2 = problem defined\n3 = hypothesis exists\n4 = experiment designed\n5 = evidence exists\n6 = paper claim candidate\n```",
+        "Promotion Rules": "Promote an idea only when evidence improves:\n\n- seed -> problem: clear pain point and scope\n- problem -> hypothesis: testable statement\n- hypothesis -> experiment: baseline, metrics, variables defined\n- experiment -> claim: evidence exists and limitations are written",
+        "Anti-Patterns": "- Turning every learning task into a research idea.\n- Writing claims before baseline.\n- Ignoring failed experiments.\n- Creating broad ideas with no minimal experiment.",
+        "Required Links": "Every research idea should link to at least one:\n\n- source note\n- paper note\n- experiment\n- knowledge node\n- architecture decision"
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": false,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "id": "readme",
+      "title": "Compiler Research OS",
+      "type": "note",
+      "status": "",
+      "path": "README.md",
+      "tags": [],
+      "aliases": [],
+      "related": {},
+      "wikilinks": [],
+      "summary": "Compiler Research OS is a local-first, Markdown-first workspace for long-term compiler research, source reading, experiment management, architecture design, and AI-assisted reflection.",
+      "sections": {
+        "MVP Launch Focus": "第一阶段聚焦一个足够小但足够关键的主题：\n\n```text\nMLIR Pass Infrastructure\n-> Triton Compilation Pipeline\n-> GPU Scheduler / Memory Planner Mental Model\n```\n\n本周建议目标：\n\n- 读懂一个 MLIR pass 的入口、pipeline 位置和 rewrite 逻辑。\n- 建立 Triton compiler architecture 的第一张架构阅读卡。\n- 跑通一个最小 benchmark 或 smoke experiment。\n- 抽取 5 个 durable knowledge nodes。\n- 写一份 weekly report，明确下一周的实验方向。\n\nFirst-week goal:\n\n- Understand one MLIR pass end to end.\n- Build a first Triton compiler architecture reading note.\n- Run one minimal benchmark or smoke experiment.\n- Extract five durable knowledge nodes.\n- Write one weekly report with a concrete next experiment.",
+        "Principles": "- Git first: every meaningful change should be reviewable.\n- Markdown first: notes remain readable without special tools.\n- Local first: no database or web service is required.\n- Obsidian compatible: wikilinks, tags, and YAML frontmatter are first-class.\n- AI native: structure notes so Codex and other agents can read, update, and reason over them.\n- Experiment driven: research ideas should eventually connect to reproducible experiments.\n- Architecture oriented: the system exists to build compiler architect judgment, not to collect links.",
+        "Directory Map": "```text\n00_inbox/           Raw notes, links, questions, and tasks before triage\n01_daily/           Daily logs, weekly reports, and monthly reviews\n02_papers/          Paper notes, paper cards, related work, and reading queues\n03_source_reading/  LLVM, MLIR, Triton, CUDA, TileLang, and TVM reading notes\n04_research/        Ideas, problems, hypotheses, claims, drafts, and research threads\n05_experiments/     Reproducible experiments, failures, reports, and benchmark suites\n06_projects/        Project notes that link to implementation repositories\n07_architecture/    ADRs, proposals, reviews, design docs, and principles\n08_outputs/         Blogs, talks, papers, tech reports, and open-source docs\n09_templates/       Markdown templates with YAML frontmatter\n10_knowledge/       Concepts, systems, problems, principles, and world model\n11_agents/          Agent prompts, task records, outputs, logs, and guardrails\n12_roadmap/         Yearly, quarterly, and monthly plans plus skill tree\n13_skills/          Reusable workflow skills for Codex and AI agents\nscripts/            Local helper scripts for notes and experiments\n```",
+        "Daily Workflow": "1. Create or update today's note in `01_daily/YYYY/`.\n2. Pick one deep task: paper, source reading, experiment, or prototype.\n3. Capture questions, decisions, and links while working.\n4. Move durable knowledge into `10_knowledge/`.\n5. Link ideas, experiments, papers, and source notes with wikilinks.\n\n日常节奏建议：\n\n```text\n10 min  打开 daily log，确定今日 focus\n70 min  深度任务：源码 / 论文 / 实验 / 原型，只选一个\n25 min  记录理解、问题、链接、代码位置\n15 min  维护知识库：frontmatter、wikilink、next action\n```\n\n每天只追求一个真实推进。不要让系统维护吞掉研究本体。",
+        "Research Workflow": "```text\nObservation\n-> Problem\n-> Hypothesis\n-> Related Work\n-> Experiment Design\n-> Prototype\n-> Result\n-> Analysis\n-> Limitation\n-> Paper Claim\n-> Paper Draft\n-> Artifact\n-> Open Source\n```",
+        "Experiment Workflow": "Each experiment should include:\n\n- `metadata.yaml`\n- `README.md`\n- `run.sh`\n- `inputs/`\n- `configs/`\n- `dumps/`\n- `profiles/`\n- `results/`\n- `analysis.md`\n- `artifacts/`\n\nEvery experiment should record git commit, environment, GPU, CUDA, input shape, compiler flags, raw results, and conclusion.",
+        "AI Agent Usage": "Agent prompts live in `11_agents/prompts/`. Agents should:\n\n- Read YAML frontmatter first.\n- Prefer linked evidence over unsupported inference.\n- Mark uncertainty explicitly.\n- Never invent papers, results, commits, or benchmark numbers.\n- Preserve the distinction between facts, hypotheses, and conclusions.",
+        "Naming": "Recommended IDs:\n\n```text\ndaily-YYYY-MM-DD\nweekly-YYYY-WNN\nmonthly-YYYY-MM\npaper-short-title-year\nsrc-system-topic\nidea-YYYY-NNNN\nexp-YYYY-NNNN\nfail-YYYY-NNNN\nadr-YYYY-NNNN\nconcept-name\nproject-name\n```",
+        "Getting Started": "Create a daily note:\n\n```bash\npython scripts/new_note.py daily \"Daily Log\"\n```\n\nCreate a research idea:\n\n```bash\npython scripts/new_note.py research_idea \"Shared Memory Aware Scheduler\"\n```\n\nCreate an experiment:\n\n```bash\npython scripts/new_experiment.py \"Baseline Triton Matmul Schedule Benchmark\"\n```",
+        "First Batch Materials": "当前已经创建的第一批材料：\n\n- `01_daily/2026/daily-2026-06-19.md`: 今日启动记录 / launch daily log\n- `04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md`: 第一个 research idea\n- `03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md`: 第一个源码阅读计划\n- `02_papers/reading/paper-triton-compiler-architecture-reading.md`: Triton compiler architecture 阅读卡\n- `10_knowledge/concepts/`: 第一批 compiler knowledge nodes\n- `05_experiments/active/exp-2026-0001-mvp-smoke-test-experiment/`: MVP smoke experiment skeleton",
+        "Skills": "Personal workflow skills live in `13_skills/`.\n\nCurrent skills:\n\n- `13_skills/compiler-research-os-workflow/`: complete operating workflow for experiments, paper reading, source reading, research ideas, architecture decisions, reflections, reviews, and remote data synchronization.\n\nUse this when asking Codex to help operate the OS rather than answer a one-off question.",
+        "Web Dashboard": "The read-only local web dashboard lives in `web/`.\n\nGenerate the Markdown/YAML/wikilink index:\n\n```bash\nnode web/scripts/build-index.mjs\n```\n\nStart the local dashboard:\n\n```bash\npython3 -m http.server 4173 --bind 127.0.0.1 -d web\n```\n\nOpen:\n\n```text\nhttp://127.0.0.1:4173\n```\n\nThe web dashboard is a visualization layer only. Markdown, YAML frontmatter, wikilinks, and Git remain the source of truth.\n\nCurrent dashboard views:\n\n- Overview\n- Knowledge Graph\n- Research Threads\n- Research Pipeline\n- Experiment Dashboard\n- Paper Reading\n- Source Reading\n- Weekly Review\n- Quality checks\n\nThe dashboard hides system notes by default, including templates, README files, agent prompts, skills, and experiment artifacts. Enable `Show system notes` in the sidebar when you need to inspect those files.\n\nThe dashboard also computes lightweight health signals for experiments and research ideas. These are meant to guide review, not replace manual judgment."
+      },
+      "checklist": {
+        "total": 0,
+        "done": 0,
+        "ratio": null,
+        "items": []
+      },
+      "isReadme": true,
+      "isTemplate": false,
+      "isSystem": true,
+      "incoming": 8,
+      "outgoing": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "daily-2026-06-18",
+      "target": "readme",
+      "type": "related",
+      "evidence": "yaml",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "skill-tree",
+      "type": "related",
+      "evidence": "yaml",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "readme",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "skill-tree",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-18",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-18.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "idea-2026-0001",
+      "type": "related",
+      "evidence": "yaml",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "related",
+      "evidence": "yaml",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "related",
+      "evidence": "yaml",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "related",
+      "evidence": "yaml",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "daily-2026-06-19",
+      "target": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "01_daily/2026/daily-2026-06-19.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "concept-triton-compilation-pipeline",
+      "type": "concepts",
+      "evidence": "yaml",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "concept-gpu-occupancy",
+      "type": "concepts",
+      "evidence": "yaml",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "concept-memory-hierarchy",
+      "type": "concepts",
+      "evidence": "yaml",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "readme",
+      "type": "projects",
+      "evidence": "yaml",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "idea-2026-0001",
+      "type": "ideas",
+      "evidence": "yaml",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "experiments",
+      "evidence": "yaml",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "concept-triton-compilation-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "concept-gpu-occupancy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "concept-memory-hierarchy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "readme",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "paper-triton-compiler-architecture-reading",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "02_papers/reading/paper-triton-compiler-architecture-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "concepts",
+      "evidence": "yaml",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "concept-compiler-pass",
+      "type": "concepts",
+      "evidence": "yaml",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "concept-ir-transformation",
+      "type": "concepts",
+      "evidence": "yaml",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "papers",
+      "evidence": "yaml",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "experiments",
+      "evidence": "yaml",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "readme",
+      "type": "projects",
+      "evidence": "yaml",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "concept-compiler-pass",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "concept-ir-transformation",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "src-mlir-pass-infrastructure-first-reading",
+      "target": "readme",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "03_source_reading/mlir/src-mlir-pass-infrastructure-first-reading.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "problem-understanding-compiler-transformation-pipelines",
+      "type": "problems",
+      "evidence": "yaml",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "experiments",
+      "evidence": "yaml",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "readme",
+      "type": "projects",
+      "evidence": "yaml",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "papers",
+      "evidence": "yaml",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "daily-2026-06-19",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "problem-understanding-compiler-transformation-pipelines",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "exp-2026-0001-mvp-smoke-test-experiment",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "readme",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "idea-2026-0001",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "04_research/ideas/idea-2026-0001-mlir-pass-pipeline-mental-model.md"
+    },
+    {
+      "source": "remote-experiment-workflow",
+      "target": "compiler-research-os-workflow",
+      "type": "skills",
+      "evidence": "yaml",
+      "sourcePath": "05_experiments/REMOTE_WORKFLOW.md"
+    },
+    {
+      "source": "remote-experiment-workflow",
+      "target": "compiler-research-os-workflow",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "05_experiments/REMOTE_WORKFLOW.md"
+    },
+    {
+      "source": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/README.md"
+    },
+    {
+      "source": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "target": "concept-triton-compilation-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/README.md"
+    },
+    {
+      "source": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "target": "concept-gpu-occupancy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/README.md"
+    },
+    {
+      "source": "exp-2026-0002-baseline-triton-matmul-on-rtx4060",
+      "target": "concept-memory-hierarchy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "05_experiments/active/exp-2026-0002-baseline-triton-matmul-on-rtx4060/README.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "concept-ir-transformation",
+      "type": "depends_on",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "idea-2026-0001",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "used_by",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "concept-ir-transformation",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-compiler-pass",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-compiler-pass.md"
+    },
+    {
+      "source": "concept-gpu-occupancy",
+      "target": "concept-memory-hierarchy",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-gpu-occupancy.md"
+    },
+    {
+      "source": "concept-gpu-occupancy",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-gpu-occupancy.md"
+    },
+    {
+      "source": "concept-gpu-occupancy",
+      "target": "concept-memory-hierarchy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-gpu-occupancy.md"
+    },
+    {
+      "source": "concept-gpu-occupancy",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-gpu-occupancy.md"
+    },
+    {
+      "source": "concept-gpu-occupancy",
+      "target": "concept-triton-compilation-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-gpu-occupancy.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "concept-compiler-pass",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "idea-2026-0001",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "used_by",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "concept-compiler-pass",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-ir-transformation",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-ir-transformation.md"
+    },
+    {
+      "source": "concept-memory-hierarchy",
+      "target": "concept-gpu-occupancy",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-memory-hierarchy.md"
+    },
+    {
+      "source": "concept-memory-hierarchy",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-memory-hierarchy.md"
+    },
+    {
+      "source": "concept-memory-hierarchy",
+      "target": "concept-gpu-occupancy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-memory-hierarchy.md"
+    },
+    {
+      "source": "concept-memory-hierarchy",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-memory-hierarchy.md"
+    },
+    {
+      "source": "concept-memory-hierarchy",
+      "target": "concept-triton-compilation-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-memory-hierarchy.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "concept-compiler-pass",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "concept-ir-transformation",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "concept-compiler-pass",
+      "type": "depends_on",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "idea-2026-0001",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "used_by",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "concept-compiler-pass",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "concept-ir-transformation",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-mlir-pass-pipeline",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-mlir-pass-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-memory-hierarchy",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-gpu-occupancy",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-compiler-pass",
+      "type": "depends_on",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-ir-transformation",
+      "type": "depends_on",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-memory-hierarchy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-gpu-occupancy",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-compiler-pass",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "concept-ir-transformation",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "concept-triton-compilation-pipeline",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/concepts/concept-triton-compilation-pipeline.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "concept-compiler-pass",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "concept-ir-transformation",
+      "type": "related_to",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "idea-2026-0001",
+      "type": "supports",
+      "evidence": "yaml",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "concept-mlir-pass-pipeline",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "concept-compiler-pass",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "concept-ir-transformation",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "idea-2026-0001",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "src-mlir-pass-infrastructure-first-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    },
+    {
+      "source": "problem-understanding-compiler-transformation-pipelines",
+      "target": "paper-triton-compiler-architecture-reading",
+      "type": "wikilink",
+      "evidence": "wikilink",
+      "sourcePath": "10_knowledge/problems/problem-understanding-compiler-transformation-pipelines.md"
+    }
+  ],
+  "brokenLinks": [],
+  "stats": {
+    "nodes": 67,
+    "edges": 115,
+    "brokenLinks": 0,
+    "orphanNodes": 49
+  }
+}

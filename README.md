@@ -186,3 +186,43 @@ Current skills:
 - `13_skills/compiler-research-os-workflow/`: complete operating workflow for experiments, paper reading, source reading, research ideas, architecture decisions, reflections, reviews, and remote data synchronization.
 
 Use this when asking Codex to help operate the OS rather than answer a one-off question.
+
+## Web Dashboard
+
+The read-only local web dashboard lives in `web/`.
+
+Generate the Markdown/YAML/wikilink index:
+
+```bash
+node web/scripts/build-index.mjs
+```
+
+Start the local dashboard:
+
+```bash
+python3 -m http.server 4173 --bind 127.0.0.1 -d web
+```
+
+Open:
+
+```text
+http://127.0.0.1:4173
+```
+
+The web dashboard is a visualization layer only. Markdown, YAML frontmatter, wikilinks, and Git remain the source of truth.
+
+Current dashboard views:
+
+- Overview
+- Knowledge Graph
+- Research Threads
+- Research Pipeline
+- Experiment Dashboard
+- Paper Reading
+- Source Reading
+- Weekly Review
+- Quality checks
+
+The dashboard hides system notes by default, including templates, README files, agent prompts, skills, and experiment artifacts. Enable `Show system notes` in the sidebar when you need to inspect those files.
+
+The dashboard also computes lightweight health signals for experiments and research ideas. These are meant to guide review, not replace manual judgment.
